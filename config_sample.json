@@ -1,0 +1,24 @@
+{
+    "target_years": ["2020", "2021", "2022", "2023", "2024"],
+    "crawler": {
+      "max_pages": 50,
+      "n_workers": 10,
+      "user_agent": "FinancialReportCrawler/1.0"
+    },
+    "bm25": {
+      "k1": 1.2,
+      "b": 0.75
+    },
+    "openai": {
+      "api_key": null,
+      "model": "gpt-4o-mini"
+    },
+    "download": {
+      "output_dir": "output_data",
+      "max_file_size": 104857600,
+      "max_concurrent": 3
+    },
+    "max_companies": 5,
+    "delay_between_companies": 2
+  }
+  
