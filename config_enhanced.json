@@ -1,0 +1,69 @@
+{
+  "target_years": ["2020", "2021", "2022", "2023", "2024"],
+  "crawler": {
+    "max_pages": 100,
+    "n_workers": 10,
+    "user_agent": "FinancialReportCrawler/1.0 (Enhanced with AI Analysis)"
+  },
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "openai": {
+    "api_key": null,
+    "model": "gpt-4o-mini",
+    "comment": "Set api_key to enable AI-powered link analysis and report selection"
+  },
+  "ai_analysis": {
+    "max_pages": 20,
+    "confidence_threshold": 0.7,
+    "enable_multi_language": true,
+    "comment": "AI analysis settings for enhanced link identification"
+  },
+  "download": {
+    "output_dir": "output_data",
+    "max_file_size": 104857600,
+    "max_concurrent": 5,
+    "create_company_subdirs": true
+  },
+  "max_companies": null,
+  "delay_between_companies": 1,
+  "logging": {
+    "level": "INFO",
+    "save_logs": true,
+    "log_file": "crawler.log"
+  },
+  "enhanced_features": {
+    "state_management_fix": true,
+    "ai_link_analysis": true,
+    "year_specific_filtering": true,
+    "multi_language_support": true,
+    "improved_error_handling": true
+  },
+  "_metadata": {
+    "version": "2.1",
+    "description": "Enhanced Annual Report Crawler Configuration",
+    "features": [
+      "Fixed AsyncCrawler state management",
+      "OpenAI Web Search for company website discovery",
+      "AI-powered link analysis with exact project plan specification",
+      "Combined BM25 + AI analysis methods",
+      "Year-specific filtering (2020-2024)",
+      "Multi-language keyword support",
+      "Improved error handling and progress reporting"
+    ],
+    "critical_fixes": [
+      "AsyncCrawler state reset between crawls",
+      "Replaced DuckDuckGo with OpenAI Web Search",
+      "Proper memory management",
+      "Enhanced session handling"
+    ],
+    "ai_integration": {
+      "prompt_specification": "Exact implementation of project plan AI agent",
+      "supported_formats": ["JSON array with url, year, confidence, reason"],
+      "target_years": "2020-2024",
+      "confidence_scoring": "0.0 to 1.0 scale",
+      "multi_language_keywords": ["annual report", "financial report", "geschäftsbericht", "rapport annuel", "informe anual"]
+    }
+  }
+} 

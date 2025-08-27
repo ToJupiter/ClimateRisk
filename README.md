@@ -68,8 +68,9 @@ Edit `config.json` to customize behavior:
 ### Components
 
 1. **WebsiteFinder** (`src/website_finder.py`)
-   - Finds company websites using search APIs
+   - Finds company websites using OpenAI Web Search
    - Handles company name normalization and validation
+   - Supports geographic location-aware search
 
 2. **EnhancedAsyncCrawler** (`src/enhanced_crawler.py`)
    - Asynchronous web crawler with content analysis
