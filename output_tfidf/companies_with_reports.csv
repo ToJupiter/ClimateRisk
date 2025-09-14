@@ -1,0 +1,355 @@
+Code,Company,Country,Has_Reports
+ADAG.NS,Adani Total Gas Ltd,India,True
+ADAI.NS,Adani Energy Solutions Ltd,India,True
+ADEN.NS,Advanced Enzyme Technologies Ltd,India,True
+ADIA.NS,Aditya Birla Fashion and Retail Ltd,India,True
+ADNA.NS,Adani Green Energy Ltd,India,True
+AFFL.NS,Affle 3i Ltd,India,True
+ALEM.NS,Alembic Pharmaceuticals Ltd,India,True
+ALKE.NS,Alkem Laboratories Ltd,India,True
+AMBE.NS,Amber Enterprises India Ltd,India,True
+APLA.NS,APL Apollo Tubes Ltd,India,True
+ARVF.NS,Arvind Fashions Ltd,India,True
+AVNT.NS,Avanti Feeds Ltd,India,True
+BARA.NS,Bharat Dynamics Ltd,India,True
+BORO.NS,Borosil Renewables Ltd,India,True
+BORS.NS,Borosil Ltd,India,True
+BROF.NS,Brookfield India Real Estate Trust,India,True
+CAPL.NS,Caplin Point Laboratories Ltd,India,True
+CHAL.NS,Chalet Hotels Ltd,India,True
+CMSN.NS,CMS Info Systems Ltd,India,True
+COHA.NS,Cohance Lifesciences Ltd,India,True
+COMU.NS,Computer Age Management Services Ltd,India,True
+CRAF.NS,Craftsman Automation Ltd,India,True
+CROP.NS,Crompton Greaves Consumer Electricals Ltd,India,True
+DELH.NS,Delhivery Ltd,India,True
+DIBL.NS,Dilip Buildcon Ltd,India,True
+DIXO.NS,Dixon Technologies (India) Ltd,India,True
+DLPA.NS,Dr. Lal PathLabs Ltd,India,True
+DPNT.NS,Deepak Nitrite Ltd,India,True
+EASM.NS,Easy Trip Planners Ltd,India,True
+ENDU.NS,Endurance Technologies Ltd,India,True
+ERIS.NS,Eris Lifesciences Ltd,India,True
+FINE.NS,Fineotex Chemical Ltd,India,True
+FINO.NS,Fine Organic Industries Ltd,India,True
+FLTX.NS,Filatex India Ltd,India,True
+GALX.NS,Galaxy Surfactants Ltd,India,True
+GEEN.NS,Greenlam Industries Ltd,India,True
+GINF.NS,G R Infraprojects Ltd,India,True
+GLAD.NS,Gland Pharma Ltd,India,True
+GMMP.NS,GMM Pfaudler Ltd,India,True
+GODE.NS,Godrej Agrovet Ltd,India,True
+GREP.NS,Greenpanel Industries Ltd,India,True
+GRSE.NS,Garden Reach Shipbuilders & Engineers Ltd,India,True
+GUJL.NS,Gujarat Fluorochemicals Ltd,India,True
+HAPL.NS,Hatsun Agro Product Ltd,India,True
+HEAC.NS,Healthcare Global Enterprises Ltd,India,True
+HEML.NS,Hemisphere Properties India Ltd,India,True
+HERN.NS,Heranba Industries Ltd,India,True
+HFDS.NS,Hindustan Foods Ltd,India,True
+HGIN.NS,HG Infra Engineering Ltd,India,True
+HIAE.NS,Hindustan Aeronautics Ltd,India,True
+HIIL.NS,Hindware Home Innovation Ltd,India,True
+HLEG.NS,HLE Glascoat Ltd,India,True
+INDG.NS,Indigo Paints Ltd,India,True
+INGL.NS,Interglobe Aviation Ltd,India,True
+INMR.NS,Indiamart Intermesh Ltd,India,True
+INUS.NS,Indus Towers Ltd,India,True
+IRCN.NS,Ircon International Ltd,India,True
+JINW.NS,Jindal Worldwide Ltd,India,True
+JUBN.NS,Jubilant Ingrevia Ltd,India,True
+JUST.NS,Just Dial Ltd,India,True
+JUWL.NS,Jupiter Wagons Ltd,India,True
+KIRO.NS,Kirloskar Oil Engines Ltd,India,True
+KIRP.NS,Kirloskar Pneumatic Company Ltd,India,True
+KPIE.NS,KPIT Technologies Ltd,India,True
+LAUL.NS,Laurus Labs Ltd,India,True
+LAXR.NS,Laxmi Organic Industries Ltd,India,True
+LTEH.NS,L&T Technology Services Ltd,India,True
+LTIM.NS,LTIMindtree Ltd,India,True
+LUXI.NS,Lux Industries Ltd,India,True
+MAII.NS,Max India Ltd,India,True
+MAIT.NS,Maithan Alloys Ltd,India,True
+MAXE.NS,Max Healthcare Institute Ltd,India,True
+MAZG.NS,Mazagon Dock Shipbuilders Ltd,India,True
+METP.NS,Metropolis Healthcare Ltd,India,True
+MGAS.NS,Mahanagar Gas Ltd,India,True
+MINC.NS,Minda Corporation Ltd,India,True
+MINS.NS,Mindspace Business Parks REIT,India,True
+MISR.NS,Mishra Dhatu Nigam Ltd,India,True
+MOIL.NS,Moil Ltd,India,True
+NARY.NS,Narayana Hrudayalaya Ltd,India,True
+NAZA.NS,Nazara Technologies Ltd,India,True
+NEOE.NS,Neogen Chemicals Ltd,India,True
+NEWG.NS,Newgen Software Technologies Ltd,India,True
+ONTE.NS,Orient Electric Ltd,India,True
+PDSL.NS,PDS Ltd,India,True
+PIIL.NS,PI Industries Ltd,India,True
+PIVI.NS,Privi Speciality Chemicals Ltd,India,True
+PLMD.NS,Poly Medicure Ltd,India,True
+PSPP.NS,PSP Projects Ltd,India,True
+QUEC.NS,Quess Corp Ltd,India,True
+RAIT.NS,Railtel Corporation of India Ltd,India,True
+RESR.NS,Restaurant Brands Asia Ltd,India,True
+RLXO.NS,Relaxo Footwears Ltd,India,True
+ROSB.NS,Rossari Biotech Ltd,India,True
+ROUT.NS,Route Mobile Ltd,India,True
+RSPO.NS,Responsive Industries Ltd,India,True
+RUCL.NS,Rupa & Company Ltd,India,True
+SAFA.NS,Safari Industries (India) Ltd,India,True
+SEIN.NS,Schneider Electric Infrastructure Ltd,India,True
+SEQU.NS,SeQuent Scientific Ltd,India,True
+SHAD.NS,Sharda Motor Industries Ltd,India,True
+SHCR.NS,Sharda Cropchem Ltd,India,True
+SHEF.NS,Sheela Foam Ltd,India,True
+SHYE.NS,Shyam Metalics and Energy Ltd,India,True
+SISI.NS,SIS Ltd,India,True
+SUMH.NS,Sumitomo Chemical India Ltd,India,True
+SYMP.NS,Symphony Ltd,India,True
+SYNN.NS,Syngene International Ltd,India,True
+TABE.NS,Tasty Bite Eatables Ltd,India,True
+TBEI.NS,Tube Investments of India Ltd,India,True
+TCIE.NS,TCI Express Ltd,India,True
+THYO.NS,Thyrocare Technologies Ltd,India,True
+TIME.NS,Time Technoplast Ltd,India,True
+TLSV.NS,TeamLease Services Ltd,India,True
+TRVT.NS,Triveni Turbine Ltd,India,True
+VARB.NS,Varun Beverages Ltd,India,True
+VMAR.NS,V-mart Retail Ltd,India,True
+VRLL.NS,VRL Logistics Ltd,India,True
+VST.NS,VST Tillers Tractors Ltd,India,True
+WEST.NS,Westlife Foodworld Ltd,India,True
+HCKC.KL,HCK Capital Group Bhd,Malaysia,True
+HTHB.KL,Hartalega Holdings Bhd,Malaysia,True
+OVER.KL,Oversea Enterprise Bhd,Malaysia,True
+TAFI.KL,TAFI Industries Bhd,Malaysia,True
+TASC.KL,TASCO Bhd,Malaysia,True
+UZMA.KL,Uzma Bhd,Malaysia,True
+VSTE.KL,VSTECS Bhd,Malaysia,True
+AC.PS,Ayala Corp,Philippines,True
+ACEN.PS,Acen Corp,Philippines,True
+AP.PS,Aboitiz Power Corp,Philippines,True
+DMC.PS,DMCI Holdings Inc,Philippines,True
+LTG.PS,LT Group Inc,Philippines,True
+SM.PS,SM Investments Corp,Philippines,True
+-0426_ADvTECH_AIR2021,Unknown Company (-0426_ADvTECH_AIR2021),Unknown,True
+-ACEN-Integrated-Report_0507,Unknown Company (-ACEN-Integrated-Report_0507),Unknown,True
+ADvTECH_2023_Integrated_Report-51383fe3,Unknown Company (ADvTECH_2023_Integrated_Report-51383fe3),Unknown,True
+ADvTECH_Annual_ingegrated_report_2019_July,Unknown Company (ADvTECH_Annual_ingegrated_report_2019_July),Unknown,True
+ADvTECH_Annual_integrated_report_2024-f5991fd3,Unknown Company (ADvTECH_Annual_integrated_report_2024-f5991fd3),Unknown,True
+ADvTECH_IR_2022Static,Unknown Company (ADvTECH_IR_2022Static),Unknown,True
+AECI Ltd,Unknown Company (AECI Ltd),Unknown,True
+Aboitiz,Unknown Company (Aboitiz),Unknown,True
+Aboitiz Power Corp,Unknown Company (Aboitiz Power Corp),Unknown,True
+Adcock Ingram Holdings Ltd,Unknown Company (Adcock Ingram Holdings Ltd),Unknown,True
+Altron Ltd,Unknown Company (Altron Ltd),Unknown,True
+Ancom Logistics Bhd,Unknown Company (Ancom Logistics Bhd),Unknown,True
+Annual Report 2019,Unknown Company (Annual Report 2019),Unknown,True
+Astral Foods Ltd,Unknown Company (Astral Foods Ltd),Unknown,True
+Attacq Ltd,Unknown Company (Attacq Ltd),Unknown,True
+Aveng Ltd,Unknown Company (Aveng Ltd),Unknown,True
+Avi Ltd,Unknown Company (Avi Ltd),Unknown,True
+Axiata Group Bhd,Unknown Company (Axiata Group Bhd),Unknown,True
+Barloworld Ltd,Unknown Company (Barloworld Ltd),Unknown,True
+Bell Equipment Ltd,Unknown Company (Bell Equipment Ltd),Unknown,True
+Bid Corporation Ltd,Unknown Company (Bid Corporation Ltd),Unknown,True
+Bidvest Group Ltd,Unknown Company (Bidvest Group Ltd),Unknown,True
+Bloomberry Resorts Corp,Unknown Company (Bloomberry Resorts Corp),Unknown,True
+Blu Label Unlimited Group Ltd,Unknown Company (Blu Label Unlimited Group Ltd),Unknown,True
+Brimstone Investment Corporation Ltd,Unknown Company (Brimstone Investment Corporation Ltd),Unknown,True
+Burstone Group Ltd,Unknown Company (Burstone Group Ltd),Unknown,True
+CA Sales Holdings Ltd,Unknown Company (CA Sales Holdings Ltd),Unknown,True
+CSC Steel Holdings Bhd,Unknown Company (CSC Steel Holdings Bhd),Unknown,True
+Cashbuild Ltd,Unknown Company (Cashbuild Ltd),Unknown,True
+Citaglobal Bhd,Unknown Company (Citaglobal Bhd),Unknown,True
+City Lodge Hotels Ltd,Unknown Company (City Lodge Hotels Ltd),Unknown,True
+Clicks Group Ltd,Unknown Company (Clicks Group Ltd),Unknown,True
+Dagang NeXchange Bhd,Unknown Company (Dagang NeXchange Bhd),Unknown,True
+Dis-Chem Pharmacies Ltd,Unknown Company (Dis-Chem Pharmacies Ltd),Unknown,True
+Emira Property Fund Ltd,Unknown Company (Emira Property Fund Ltd),Unknown,True
+Emperador Inc,Unknown Company (Emperador Inc),Unknown,True
+Equites Property Fund Ltd,Unknown Company (Equites Property Fund Ltd),Unknown,True
+Exxaro Resources Ltd,Unknown Company (Exxaro Resources Ltd),Unknown,True
+Famous Brands Ltd,Unknown Company (Famous Brands Ltd),Unknown,True
+Fast Energy Holdings Bhd,Unknown Company (Fast Energy Holdings Bhd),Unknown,True
+Fortress Real Estate Investments Ltd,Unknown Company (Fortress Real Estate Investments Ltd),Unknown,True
+Foschini Group Ltd,Unknown Company (Foschini Group Ltd),Unknown,True
+GT Capital Holdings Inc,Unknown Company (GT Capital Holdings Inc),Unknown,True
+Gemfields Group Ltd,Unknown Company (Gemfields Group Ltd),Unknown,True
+Genting Malaysia Bhd,Unknown Company (Genting Malaysia Bhd),Unknown,True
+Genting Plantations Bhd,Unknown Company (Genting Plantations Bhd),Unknown,True
+Globe Telecom Inc,Unknown Company (Globe Telecom Inc),Unknown,True
+Golden Land Bhd,Unknown Company (Golden Land Bhd),Unknown,True
+Grand Parade Investments Ltd,Unknown Company (Grand Parade Investments Ltd),Unknown,True
+Grindrod Ltd,Unknown Company (Grindrod Ltd),Unknown,True
+HCI-AR-2021-Integrated-annual-report,Unknown Company (HCI-AR-2021-Integrated-annual-report),Unknown,True
+HCI-AR-2024-Integrated-annual-report,Unknown Company (HCI-AR-2024-Integrated-annual-report),Unknown,True
+HCI_AR_2023,Unknown Company (HCI_AR_2023),Unknown,True
+HCI_Integrated_Report_2022,Unknown Company (HCI_Integrated_Report_2022),Unknown,True
+Harmony Gold Mining Company Ltd,Unknown Company (Harmony Gold Mining Company Ltd),Unknown,True
+Heineken Malaysia Bhd,Unknown Company (Heineken Malaysia Bhd),Unknown,True
+Hengyuan Refining Company Bhd,Unknown Company (Hengyuan Refining Company Bhd),Unknown,True
+Homeritz Corporation Bhd,Unknown Company (Homeritz Corporation Bhd),Unknown,True
+Hudaco Industries Ltd,Unknown Company (Hudaco Industries Ltd),Unknown,True
+Hulamin Ltd,Unknown Company (Hulamin Ltd),Unknown,True
+Hyprop Investments Ltd,Unknown Company (Hyprop Investments Ltd),Unknown,True
+Impala Platinum Holdings Ltd annual report 2022,Unknown Company (Impala Platinum Holdings Ltd annual report 2022),Unknown,True
+Innity Corporation Bhd,Unknown Company (Innity Corporation Bhd),Unknown,True
+Innoprise Plantations Bhd,Unknown Company (Innoprise Plantations Bhd),Unknown,True
+Integrated_Report_2018,Unknown Company (Integrated_Report_2018),Unknown,True
+Integrated_Report_2019,Unknown Company (Integrated_Report_2019),Unknown,True
+Integrated_Report_2020,Unknown Company (Integrated_Report_2020),Unknown,True
+International Container Terminal Services Inc,Unknown Company (International Container Terminal Services Inc),Unknown,True
+Invicta Holdings Ltd,Unknown Company (Invicta Holdings Ltd),Unknown,True
+Iskandar Waterfront City Bhd,Unknown Company (Iskandar Waterfront City Bhd),Unknown,True
+JCY International Bhd,Unknown Company (JCY International Bhd),Unknown,True
+JG Summit Holdings Inc,Unknown Company (JG Summit Holdings Inc),Unknown,True
+Jolibee,Unknown Company (Jolibee),Unknown,True
+KL,Unknown Company (KL),Unknown,True
+Kap Ltd,Unknown Company (Kap Ltd),Unknown,True
+Kelington Group Bhd,Unknown Company (Kelington Group Bhd),Unknown,True
+Lewis Group Ltd,Unknown Company (Lewis Group Ltd),Unknown,True
+Luxchem Corporation Bhd,Unknown Company (Luxchem Corporation Bhd),Unknown,True
+MGB Bhd,Unknown Company (MGB Bhd),Unknown,True
+MTN Group Ltd,Unknown Company (MTN Group Ltd),Unknown,True
+Manila Water Company Inc,Unknown Company (Manila Water Company Inc),Unknown,True
+Marine & General Bhd,Unknown Company (Marine & General Bhd),Unknown,True
+Metair Investments Ltd,Unknown Company (Metair Investments Ltd),Unknown,True
+Mikro MSC Bhd,Unknown Company (Mikro MSC Bhd),Unknown,True
+Mpact Ltd,Unknown Company (Mpact Ltd),Unknown,True
+Mr Price Group Ltd,Unknown Company (Mr Price Group Ltd),Unknown,True
+MultiChoice Group Ltd,Unknown Company (MultiChoice Group Ltd),Unknown,True
+Murray & Roberts Holdings Ltd,Unknown Company (Murray & Roberts Holdings Ltd),Unknown,True
+N09-1031,Unknown Company (N09-1031),Unknown,True
+NS,Unknown Company (NS),Unknown,True
+Nampak Ltd,Unknown Company (Nampak Ltd),Unknown,True
+Naspers Ltd,Unknown Company (Naspers Ltd),Unknown,True
+Nepi Rockcastle NV,Unknown Company (Nepi Rockcastle NV),Unknown,True
+NetX Holdings Bhd,Unknown Company (NetX Holdings Bhd),Unknown,True
+Northam Platinum Holdings Ltd,Unknown Company (Northam Platinum Holdings Ltd),Unknown,True
+OEB - Annual Report 2020,Unknown Company (OEB - Annual Report 2020),Unknown,True
+OEB - Annual Report 2023,Unknown Company (OEB - Annual Report 2023),Unknown,True
+OEB - Annual Report 2024,Unknown Company (OEB - Annual Report 2024),Unknown,True
+OEB ANNUAL REPORT 2022,Unknown Company (OEB ANNUAL REPORT 2022),Unknown,True
+Oceana Group Ltd,Unknown Company (Oceana Group Ltd),Unknown,True
+Octodec Investments Ltd,Unknown Company (Octodec Investments Ltd),Unknown,True
+Oversea AR 2021,Unknown Company (Oversea AR 2021),Unknown,True
+PGF Capital Bhd,Unknown Company (PGF Capital Bhd),Unknown,True
+PHINMA Energy 2018 SEC 17-A rev1,Unknown Company (PHINMA Energy 2018 SEC 17-A rev1),Unknown,True
+PHINMA-Energy-2018-SEC-17-A-rev1-ACEN,Unknown Company (PHINMA-Energy-2018-SEC-17-A-rev1-ACEN),Unknown,True
+PLDT Inc,Unknown Company (PLDT Inc),Unknown,True
+POS Malaysia Bhd,Unknown Company (POS Malaysia Bhd),Unknown,True
+PPB Group,Unknown Company (PPB Group),Unknown,True
+Pepkor Holdings Ltd,Unknown Company (Pepkor Holdings Ltd),Unknown,True
+Pick n Pay,Unknown Company (Pick n Pay),Unknown,True
+Poh Kong Holding Bhd,Unknown Company (Poh Kong Holding Bhd),Unknown,True
+RCL Foods Ltd,Unknown Company (RCL Foods Ltd),Unknown,True
+Ranhill Utilities Bhd,Unknown Company (Ranhill Utilities Bhd),Unknown,True
+Robinsons Land Corp,Unknown Company (Robinsons Land Corp),Unknown,True
+Robinsons Retail Holdings Inc,Unknown Company (Robinsons Retail Holdings Inc),Unknown,True
+Rohas Tecnic Bhd,Unknown Company (Rohas Tecnic Bhd),Unknown,True
+S P Setia Bhd,Unknown Company (S P Setia Bhd),Unknown,True
+SEG Company,Unknown Company (SEG Company),Unknown,True
+SKP Resources Bhd,Unknown Company (SKP Resources Bhd),Unknown,True
+SLP Resources Bhd,Unknown Company (SLP Resources Bhd),Unknown,True
+Samchem Holdings Bhd,Unknown Company (Samchem Holdings Bhd),Unknown,True
+Sappi Ltd,Unknown Company (Sappi Ltd),Unknown,True
+Sarawak Plantation Bhd,Unknown Company (Sarawak Plantation Bhd),Unknown,True
+Sarawak palm oil Bhd,Unknown Company (Sarawak palm oil Bhd),Unknown,True
+Sasol Ltd,Unknown Company (Sasol Ltd),Unknown,True
+Scicom,Unknown Company (Scicom),Unknown,True
+Scientex Bhd,Unknown Company (Scientex Bhd),Unknown,True
+Seni Jaya Corporation Bhd,Unknown Company (Seni Jaya Corporation Bhd),Unknown,True
+Sern Kou Resourse Bhd,Unknown Company (Sern Kou Resourse Bhd),Unknown,True
+Signature International Bhd,Unknown Company (Signature International Bhd),Unknown,True
+Sime Darby Bhd,Unknown Company (Sime Darby Bhd),Unknown,True
+Southern Steel Bhd,Unknown Company (Southern Steel Bhd),Unknown,True
+Southern Sun Ltd,Unknown Company (Southern Sun Ltd),Unknown,True
+Spur Corporation,Unknown Company (Spur Corporation),Unknown,True
+Star Media Group Bhd,Unknown Company (Star Media Group Bhd),Unknown,True
+Sun International Ltd,Unknown Company (Sun International Ltd),Unknown,True
+Sunway Real Estate Investment Trust,Unknown Company (Sunway Real Estate Investment Trust),Unknown,True
+Superlon,Unknown Company (Superlon),Unknown,True
+Supermax Corporation Bhd,Unknown Company (Supermax Corporation Bhd),Unknown,True
+Suria Capital Holdings Bhd,Unknown Company (Suria Capital Holdings Bhd),Unknown,True
+Sycal Ventures Bhd,Unknown Company (Sycal Ventures Bhd),Unknown,True
+Systech Bhd,Unknown Company (Systech Bhd),Unknown,True
+TDM Bhd,Unknown Company (TDM Bhd),Unknown,True
+TH Plantations Bhd,Unknown Company (TH Plantations Bhd),Unknown,True
+TMC Life Sciences Bhd,Unknown Company (TMC Life Sciences Bhd),Unknown,True
+TRC Synergy Bhd,Unknown Company (TRC Synergy Bhd),Unknown,True
+TSH Resources Bhd,Unknown Company (TSH Resources Bhd),Unknown,True
+TV,Unknown Company (TV),Unknown,True
+Ta Ann Holdings Bhd,Unknown Company (Ta Ann Holdings Bhd),Unknown,True
+Ta Win Holdings Bhd,Unknown Company (Ta Win Holdings Bhd),Unknown,True
+Taliworks Corporation Bhd,Unknown Company (Taliworks Corporation Bhd),Unknown,True
+Tanco Holdings Bhd,Unknown Company (Tanco Holdings Bhd),Unknown,True
+Telekom Malaysia Bhd,Unknown Company (Telekom Malaysia Bhd),Unknown,True
+Telkom SA SOC Ltd,Unknown Company (Telkom SA SOC Ltd),Unknown,True
+Teo Seng Capital Bhd,Unknown Company (Teo Seng Capital Bhd),Unknown,True
+Tex Cycle Technology (M) Bhd,Unknown Company (Tex Cycle Technology (M) Bhd),Unknown,True
+Texchem Resources Bhd,Unknown Company (Texchem Resources Bhd),Unknown,True
+Thong Guan Industries Bhd,Unknown Company (Thong Guan Industries Bhd),Unknown,True
+Tiger Brands Ltd,Unknown Company (Tiger Brands Ltd),Unknown,True
+Tiong Nam Logistics Holdings Bhd,Unknown Company (Tiong Nam Logistics Holdings Bhd),Unknown,True
+Tomei Consolidated Bhd,Unknown Company (Tomei Consolidated Bhd),Unknown,True
+Tomypak Holdings Bhd,Unknown Company (Tomypak Holdings Bhd),Unknown,True
+Tong Herr Resources Bhd,Unknown Company (Tong Herr Resources Bhd),Unknown,True
+UPA,Unknown Company (UPA),Unknown,True
+Uchi Technologies Bhd,Unknown Company (Uchi Technologies Bhd),Unknown,True
+Unisem (M) Bhd,Unknown Company (Unisem (M) Bhd),Unknown,True
+United Plantations Bhd,Unknown Company (United Plantations Bhd),Unknown,True
+Universal Robina Corp,Unknown Company (Universal Robina Corp),Unknown,True
+VS Industry Bhd,Unknown Company (VS Industry Bhd),Unknown,True
+Valterra Platinum Ltd,Unknown Company (Valterra Platinum Ltd),Unknown,True
+ViTrox Corporation Bhd,Unknown Company (ViTrox Corporation Bhd),Unknown,True
+VisDynamics Holdings Bhd,Unknown Company (VisDynamics Holdings Bhd),Unknown,True
+Vodacom Group Ltd,Unknown Company (Vodacom Group Ltd),Unknown,True
+Vukile Property Fund Ltd,Unknown Company (Vukile Property Fund Ltd),Unknown,True
+W T K Holdings Bhd,Unknown Company (W T K Holdings Bhd),Unknown,True
+WCT Holdings Bhd,Unknown Company (WCT Holdings Bhd),Unknown,True
+Wang-Zheng Bhd,Unknown Company (Wang-Zheng Bhd),Unknown,True
+Wasco Bhd,Unknown Company (Wasco Bhd),Unknown,True
+Wellcall Holdings Bhd,Unknown Company (Wellcall Holdings Bhd),Unknown,True
+Wesizwe,Unknown Company (Wesizwe),Unknown,True
+Wilcon Depot Inc,Unknown Company (Wilcon Depot Inc),Unknown,True
+Willowglen MSC Bhd,Unknown Company (Willowglen MSC Bhd),Unknown,True
+Wilson Bayly Holmes - Ovcon Ltd,Unknown Company (Wilson Bayly Holmes - Ovcon Ltd),Unknown,True
+Woolworths Holdings Ltd,Unknown Company (Woolworths Holdings Ltd),Unknown,True
+XOX Networks Bhd,Unknown Company (XOX Networks Bhd),Unknown,True
+YSP Southeast Asia Holding Bhd,Unknown Company (YSP Southeast Asia Holding Bhd),Unknown,True
+YTL Hospitality REIT,Unknown Company (YTL Hospitality REIT),Unknown,True
+YTL Power,Unknown Company (YTL Power),Unknown,True
+YTL Power International Bhd,Unknown Company (YTL Power International Bhd),Unknown,True
+Ygl Convergence Bhd,Unknown Company (Ygl Convergence Bhd),Unknown,True
+Yinson Holdings Berhad,Unknown Company (Yinson Holdings Berhad),Unknown,True
+Zhulian Corp Bhd,Unknown Company (Zhulian Corp Bhd),Unknown,True
+_ADvTECH AIR_2018 (Aug),Unknown Company (_ADvTECH AIR_2018 (Aug)),Unknown,True
+_ADvTECH_IR2020,Unknown Company (_ADvTECH_IR2020),Unknown,True
+ayala land inc,Unknown Company (ayala land inc),Unknown,True
+fy23-phuthuma-nathi-iar-2023-hr-final,Unknown Company (fy23-phuthuma-nathi-iar-2023-hr-final),Unknown,True
+hextar global,Unknown Company (hextar global),Unknown,True
+iOCO Ltd,Unknown Company (iOCO Ltd),Unknown,True
+mcg-fy19-integrated-annual-report-low-res,Unknown Company (mcg-fy19-integrated-annual-report-low-res),Unknown,True
+mcg-fy20-integrated-annual-report-low-res,Unknown Company (mcg-fy20-integrated-annual-report-low-res),Unknown,True
+mcg-fy21-integrated-annual-report-low-res,Unknown Company (mcg-fy21-integrated-annual-report-low-res),Unknown,True
+mcg-fy22-full-iar-low-res,Unknown Company (mcg-fy22-full-iar-low-res),Unknown,True
+phuthuma-nathi-iar-2024-final-hires,Unknown Company (phuthuma-nathi-iar-2024-final-hires),Unknown,True
+pn2-2018-hires,Unknown Company (pn2-2018-hires),Unknown,True
+report,Unknown Company (report),Unknown,True
+BCG.HM,Bamboo Capital Group JSC,Vietnam,True
+CTD.HM,Coteccons Construction JSC,Vietnam,True
+FPT.HM,FPT Corp,Vietnam,True
+FRT.HM,FPT Digital Retail JSC,Vietnam,True
+GEX.HM,Gelex Group JSC,Vietnam,True
+HBC.HNO,Hoa Binh Construction Group JSC,Vietnam,True
+HPG.HM,Hoa Phat Group JSC,Vietnam,True
+KBC.HM,Kinhbac City Development Holding Corp,Vietnam,True
+KDH.HM,Khang Dien House Trading and Investment JSC,Vietnam,True
+MSN.HM,Masan Group Corp,Vietnam,True
+MWG.HM,Mobile World Investment Corp,Vietnam,True
+NVL.HM,No Va Land Investment Group Corp,Vietnam,True
+PDR.HM,Phat Dat Real Estate Development Corp,Vietnam,True
+SAB.HM,Saigon Beer Alcohol Beverage Corp,Vietnam,True
+VHM.HM,Vinhomes JSC,Vietnam,True
+VNM.HM,Vietnam Dairy Products JSC,Vietnam,True

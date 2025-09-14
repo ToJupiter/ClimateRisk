@@ -1,0 +1,8 @@
+The before prompt:
+Implement me a txt reader. First of all, you need to understand the output_tfidf dir. It contains folders which have the .txt annual report. Each folder containing .txt is a company. Your job is to find which companies exist in the folder because some companies are not available in the folders, while they appear in the company_full_list.csv. Because the .txt report should contain the company name, you use the company name provided in the .csv file to find out which company they are. You must read through all of the folders and identify the company name of them the right way using TF-IDF search or some good searching methods. Do not miss a single folder, because they are all rightous company, just don't know their exact name on the list yet.
+
+----
+You need to focus on this type of extraction and fixing operation. First of all, we already have a functioning code related to company extraction. But let me provide you more information:
+1. Folder name containing .txt files may be a direct or almost match the company name or the code name of the company. If it is a direct match or highly similar (>0.9 cosine similarity) => that company does exist.
+2. Keep the TF-IDF reading .txt files only when the folder name does not match (<0.9 cosine similarity)
+2. The code should output a csv file with those columns: folder_path, company_name, company_code. You must make sure that the path is like the path in the folder output_txt itself, like Dương/2. PDR not output_txt/Dương/2. PDR.

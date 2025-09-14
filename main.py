@@ -1,8 +1,9 @@
 # main.py
 
 import os
-from config import PROJECT_DATA_ROOT, OUTPUT_TXT_ROOT
+from config import PROJECT_DATA_ROOT, OUTPUT_TXT_ROOT, OUTPUT_TFIDF_ROOT
 from pdf_processor import process_all_pdfs
+from tfidf_calculator import calculate_tfidf
 import logging
 
 # --- Configure Logging ---
@@ -18,24 +19,20 @@ def main():
 
     # --- Step 1: PDF to Text Conversion ---
     logger.info("--- Step 1: Converting PDFs to Text ---")
-    if not os.path.exists(PROJECT_DATA_ROOT):
-        logger.error(f"Input data directory '{PROJECT_DATA_ROOT}' does not exist. Please check the path in config.py.")
-        return
+    # if not os.path.exists(PROJECT_DATA_ROOT):
+    #     logger.error(f"Input data directory '{PROJECT_DATA_ROOT}' does not exist. Please check the path in config.py.")
+    #     return
 
     #Turn on if pdfs are not processed
     # process_all_pdfs(max_workers=12)
     logger.info("--- PDF to Text Conversion Completed ---")
 
-    # --- Future Steps (Placeholder) ---
-    # logger.info("--- Step 2: Calculating TF-IDF ---")
-    # calculate_tfidf(...) # Call function from tfidf_calculator.py
-    #
-    # logger.info("--- Step 3: Merging Data ---")
-    # merge_data(...) # Call function from data_merger.py
-    #
-    # logger.info("--- Step 4: Training Models ---")
-    # run_models(...) # Call function from model_trainer.py
-
+    logger.info("--- Step 2: Calculating TF-IDF Scores ---")
+    if not os.path.exists(OUTPUT_TXT_ROOT):
+        logger.warning(f"Text output directory '{OUTPUT_TXT_ROOT}' does not exist. Did Step 1 run successfully?")
+    
+    calculate_tfidf()
+    logger.info("--- TF-IDF Calculation Completed ---")    
     logger.info("Pipeline execution finished (for now, only PDF conversion).")
 
 if __name__ == "__main__":
