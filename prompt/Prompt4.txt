@@ -4,4 +4,6 @@ Reading guidelines (This should be done first - Step 1/2):
 3. Thirdly, read the Company_Dataset_Final.csv file to gather the calculated information.
 
 Execute the code (Step 2/2):
-Implement the code so that firstly, it combines tfidf_scores.csv with company_identification_results.csv. Leave me columns like this with these combinations: 
+Implement the code so that firstly, it combines tfidf_scores.csv with company_identification_results.csv. Leave me columns like this with these combinations: path_to_file, year, company_name, company_code, ClimateRiskScore. Then, in the last step, it combines it with their calculated numbers in the file Company_Dataset_Final.csv. 
+
+The python code should be put in output_tfidf folder. Make sure that the code is simple enough, make sure that it is clean without an overflow of comments and hard coding patterns.
