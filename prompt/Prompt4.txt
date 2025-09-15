@@ -1,0 +1,7 @@
+Reading guidelines (This should be done first - Step 1/2):
+1. First of all, you must read the file tfidf_scores.csv. In this file, focus on the columns: doc_id and ClimateRiskScore. The doc_id is the name of the financial report file in these companies. It also contains the name/codename of the company.
+2. Secondly, we would focus on the column folder_path in the file company_identification_results.csv. With this column folder_path, we can map the doc_id to company name and codename. This way, we can track the path of the documents and the corresponding company name.
+3. Thirdly, read the Company_Dataset_Final.csv file to gather the calculated information.
+
+Execute the code (Step 2/2):
+Implement the code so that firstly, it combines tfidf_scores.csv with company_identification_results.csv. Leave me columns like this with these combinations: 
