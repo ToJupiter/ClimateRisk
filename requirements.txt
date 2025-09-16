@@ -6,3 +6,5 @@ Cython
 PyMuPDF
 nltk
 causalml
+econml
+dowhy
