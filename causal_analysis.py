@@ -111,7 +111,7 @@ class CausalAnalysis:
             'STDebt_TA': 'lctat',
             'STDebt_TL': 'lctlt',
             'IntExp_Sales': 'chlct',  # Assuming this is interest expense ratio
-            'Cash_STDebt': 'CH',
+            # 'Cash_STDebt': 'CH',
             'Cash_Holdings': 'CH',  # Using same as Cash_STDebt for now
             'CashFlow': 'CF',
             'Cash_TA_lag': 'cheat',  # Assuming this is cash to total assets lagged
@@ -119,15 +119,15 @@ class CausalAnalysis:
             'Tangible_Asset_Ratio': 'Fixed',
             'Growth': 'Growth',
             'Net_Income_After_Tax': 'NI',
-            'Net_Income_Before_Tax': 'NI',  # Using same variable
+            # 'Net_Income_Before_Tax': 'NI',  # Using same variable
             'Board_Meetings': 'BoardMeetings',
             'Female_Board': 'Female',
             'CEO_Board_Member': 'CEO',
             'Governance_Score': 'G_score',
             'Environmental_Score': 'E_score',
             # Additional variables
-            'Country': 'Country of Exchange',
-            'Year': 'year'
+            # 'Country': 'Country of Exchange',
+            # 'Year': 'year'
         }
         
         # Create mapped dataset
@@ -191,9 +191,9 @@ class CausalAnalysis:
         # Define confounders (X)
         confounder_cols = [
             'SIZE', 'LEV', 'STDebt_TA', 'STDebt_TL', 'IntExp_Sales',
-            'Cash_STDebt', 'Cash_Holdings', 'CashFlow', 'Cash_TA_lag',
+            'Cash_Holdings', 'CashFlow', 'Cash_TA_lag',
             'Inventory_Sales', 'Tangible_Asset_Ratio', 'Growth',
-            'Net_Income_After_Tax', 'Net_Income_Before_Tax', 'Board_Meetings',
+            'Net_Income_After_Tax', 'Board_Meetings',
             'Female_Board', 'CEO_Board_Member', 'Governance_Score', 'Environmental_Score'
         ]
         
