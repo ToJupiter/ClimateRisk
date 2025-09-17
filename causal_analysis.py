@@ -112,22 +112,25 @@ class CausalAnalysis:
             'STDebt_TL': 'lctlt',
             'IntExp_Sales': 'chlct',  # Assuming this is interest expense ratio
             # 'Cash_STDebt': 'CH',
-            'Cash_Holdings': 'CH',  # Using same as Cash_STDebt for now
+            # 'Cash_Holdings': 'CH',  # Using same as Cash_STDebt for now
             'CashFlow': 'CF',
             'Cash_TA_lag': 'cheat',  # Assuming this is cash to total assets lagged
             'Inventory_Sales': 'Inventory',
             'Tangible_Asset_Ratio': 'Fixed',
             'Growth': 'Growth',
             'Net_Income_After_Tax': 'NI',
+            'GDP_Growth': 'GDPgrowth',
+            'Inf': 'INF',
             # 'Net_Income_Before_Tax': 'NI',  # Using same variable
-            'Board_Meetings': 'BoardMeetings',
-            'Female_Board': 'Female',
-            'CEO_Board_Member': 'CEO',
-            'Governance_Score': 'G_score',
-            'Environmental_Score': 'E_score',
+            # 'Board_Meetings': 'BoardMeetings',
+            # 'Female_Board': 'Female',
+            # 'CEO_Board_Member': 'CEO',
+            # 'Governance_Score': 'G_score',
+            # 'Environmental_Score': 'E_score',
             # Additional variables
-            # 'Country': 'Country of Exchange',
-            # 'Year': 'year'
+            'Country': 'Country of Exchange',
+            'Year': 'year',
+            'GICS': 'GICS Industry Name'
         }
         
         # Create mapped dataset
@@ -191,10 +194,9 @@ class CausalAnalysis:
         # Define confounders (X)
         confounder_cols = [
             'SIZE', 'LEV', 'STDebt_TA', 'STDebt_TL', 'IntExp_Sales',
-            'Cash_Holdings', 'CashFlow', 'Cash_TA_lag',
+            'CashFlow', 'Cash_TA_lag',
             'Inventory_Sales', 'Tangible_Asset_Ratio', 'Growth',
-            'Net_Income_After_Tax', 'Board_Meetings',
-            'Female_Board', 'CEO_Board_Member', 'Governance_Score', 'Environmental_Score'
+            'Net_Income_After_Tax', 'GDP_Growth', 'Inf'
         ]
         
         X = df[confounder_cols].values
@@ -260,8 +262,8 @@ class CausalAnalysis:
         
         # Initialize DML with Random Forest
         dml = LinearDML(
-            model_y=RandomForestRegressor(n_estimators=150, random_state=42),
-            model_t=RandomForestRegressor(n_estimators=150, random_state=42),
+            model_y=RandomForestRegressor(n_estimators=100, random_state=42),
+            model_t=RandomForestRegressor(n_estimators=100, random_state=42),
             cv=5,
             random_state=42
         )
@@ -307,7 +309,7 @@ class CausalAnalysis:
         cf = CausalForestDML(
             model_y=RandomForestRegressor(n_estimators=50, random_state=42),
             model_t=RandomForestRegressor(n_estimators=50, random_state=42),
-            n_estimators=150,
+            n_estimators=120,
             random_state=42
         )
         
@@ -566,7 +568,7 @@ def main():
     print("Following exact specifications for production-grade analysis")
     
     # Initialize analysis
-    analysis = CausalAnalysis("/mnt/e/NEUConference/ClimateRisk/output_tfidf/Combined_Company_Data.csv")
+    analysis = CausalAnalysis("/mnt/e/NEUConference/ClimateRisk/output_tfidf/Combined_Company_Data_2022_2024.csv")
     
     # Execute all steps
     try:

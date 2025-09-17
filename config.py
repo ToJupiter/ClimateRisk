@@ -15,7 +15,7 @@ OUTPUT_TFIDF_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), 'out
 # --- File Extensions ---
 PDF_EXTENSION = '.pdf'
 TEXT_EXTENSION = '.txt'
-TFIDF_CSV_FILE = 'tfidf_scores.csv'
+TFIDF_CSV_FILE = 'additional_tfidf_scores.csv'
 
 CLIMATE_RISK_KEYWORDS_RAW = [
     "adaptive capacity", "air burst", "airburst", "airbursts", "apocalypse",
@@ -46,3 +46,6 @@ CLIMATE_RISK_KEYWORDS_RAW = [
 CLIMATE_RISK_KEYWORDS = [keyword.lower() for keyword in CLIMATE_RISK_KEYWORDS_RAW]
 EXISTING_VARS_FILE = os.path.join(os.path.dirname(__file__), 'data', 'existing_vars.csv') 
 FINAL_DATASET_FILE = os.path.join(os.path.dirname(__file__), 'data', 'final_dataset_for_modeling.csv')
+
+NEW_DATASET_FILE = "/mnt/e/NEUConference/Input_Variable"
+NEW_DATASET_OUTPUT = "/mnt/e/NEUConference/ClimateRisk/output_txt/Additional"
