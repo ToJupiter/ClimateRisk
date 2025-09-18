@@ -1,0 +1,15 @@
+This is the old set of columns in my csv:
+ID,identifier,companyname,countryofexchange,gicsindustryname,year,fv,esg,size,lev,lctat,lctlt,chlct,ch,cf,cheat,inventory,fixed,growth,ni,boardmeetings,female,ceo,g_score,e_score,gdpgrowth,gdppercapita,inf,climateriskscore,n_years
+
+This is the new set:
+"",Identifier,Company Name,Country of Exchange,GICS Industry Name,year,FV,ESG,SIZE,LEV,lctat,lctlt,chlct,CH,CF,cheat,Inventory,Fixed,Growth,NI,BoardMeetings,Female,CEO,G_score,E_score,GDPgrowth,GDPpercapita,INF,ClimateRiskScore, n_years
+
+Check if they are the same in their orders and meaning
+
+-----
+These are the 4 cases we are having:
+Direct impact of ClimateRiskScore on FV without confounders
+Direct impact of ClimateRiskScore on FV with confounders
+Moderating effect of ESG on the relationship between ClimateRiskScore and FV without confounders
+Moderating effect of ESG on the relationship between ClimateRiskScore and FV with confounders
+The list above are the confounders. Select the features and divide them by their means in the 4 cases given above. Return the table as simple as you could.
