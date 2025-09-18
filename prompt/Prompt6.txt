@@ -7,9 +7,291 @@ This is the new set:
 Check if they are the same in their orders and meaning
 
 -----
+
 These are the 4 cases we are having:
-Direct impact of ClimateRiskScore on FV without confounders
-Direct impact of ClimateRiskScore on FV with confounders
-Moderating effect of ESG on the relationship between ClimateRiskScore and FV without confounders
-Moderating effect of ESG on the relationship between ClimateRiskScore and FV with confounders
-The list above are the confounders. Select the features and divide them by their means in the 4 cases given above. Return the table as simple as you could.
+1. Direct impact of ClimateRiskScore on FV without confounders
+2. Direct impact of ClimateRiskScore on FV with confounders
+3. Moderating effect of ESG on the relationship between ClimateRiskScore and FV without confounders
+4. Moderating effect of ESG on the relationship between ClimateRiskScore and FV with confounders
+
+Suggest models to be used (EconML, sklearn) for those requirements. I suggest sticking with DoubleML models using XGB or RandomForest. Maybe we will go with them. We will not be using Causal Forest, so stick with LinearDML with RandomForest or XGB Estimator only.
+
+This is the original code, config it to be compatible with the 4 settings I mentioned above. Only use Double ML with Linear setting. Fix the code to use Linear DML for all 4 settings.
+List of variables, ignore the commented ones:
+``` python
+analysis_vars = {
+            # Outcome variable
+            'Tobins_Q': 'FV',
+            # Treatment variable  
+            'Climate_Risk_TFIDF': 'ClimateRiskScore',
+            # Moderator
+            'ESG': 'ESG',
+            # Confounders - map to available columns
+            'SIZE': 'SIZE',
+            'LEV': 'LEV', 
+            'STDebt_TA': 'lctat',
+            'STDebt_TL': 'lctlt',
+            'IntExp_Sales': 'chlct',  # Assuming this is interest expense ratio
+            # 'Cash_STDebt': 'CH',
+            # 'Cash_Holdings': 'CH',  # Using same as Cash_STDebt for now
+            'CashFlow': 'CF',
+            'Cash_TA_lag': 'cheat',  # Assuming this is cash to total assets lagged
+            'Inventory_Sales': 'Inventory',
+            'Tangible_Asset_Ratio': 'Fixed',
+            'Growth': 'Growth',
+            'Net_Income_After_Tax': 'NI',
+            'GDP_Growth': 'GDPgrowth',
+            'Inf': 'INF',
+            # 'Net_Income_Before_Tax': 'NI',  # Using same variable
+            # 'Board_Meetings': 'BoardMeetings',
+            # 'Female_Board': 'Female',
+            # 'CEO_Board_Member': 'CEO',
+            # 'Governance_Score': 'G_score',
+            # 'Environmental_Score': 'E_score',
+            # Additional variables
+            'Country': 'Country of Exchange',
+            'Year': 'year',
+            'GICS': 'GICS Industry Name'
+        }
+```
+
+You need to implement the 4 cases with the Linear DML. My requirements:
+1. Keep the same data loading path, and data processing logic.
+2. Implement 4 Linear DML models with the settings I said above.
+3. These are the statistics you need to implement:
+
+### 🔹 1. **Model Summary Statistics**
+
+These are located at the top right of the output:
+
+| Metric | Value |
+|-------|-------|
+| Number of observations (`N`) | 1,683 |
+| F-statistic (F) | 34.09 |
+| p-value for F-test | 0.0000 |
+| R-squared | 0.2098 |
+| Adjusted R-squared | 0.2037 |
+| Root MSE (RMSE) | 2.9303 |
+
+> These can be used to evaluate overall model fit.
+
+---
+
+### 🔹 2. **ANOVA Table (Sum of Squares)**
+
+This is useful for computing various components manually.
+
+| Source | SS (Sum of Squares) | df (Degrees of Freedom) | MS (Mean Square) |
+|--------|----------------------|--------------------------|--------------------|
+| Model | 3805.42244 | 13 | 292.724803 |
+| Residual | 14330.7614 | 1,669 | 8.58643583 |
+| Total | 18136.1838 | 1,682 | 10.7825112 |
+
+> You can use these to compute:
+> - R-squared = SS(Model) / SS(Total)
+> - Adj R-squared: already given
+> - RMSE = √(MS(Residual)) = √8.5864 ≈ 2.9303 ✅
+
+---
+
+### 🔹 3. **Regression Coefficients and Inference**
+
+Each row corresponds to a predictor variable. Here's the full list with their values:
+
+| Variable | Coefficient | Std. Error | t-value | p-value | 95% CI Lower | 95% CI Upper |
+|---------|-------------|------------|--------|--------|---------------|---------------|
+| `esg` | 0.0774523 | 0.0113832 | 6.80 | 0.000 | 0.0551255 | 0.0997791 |
+| `climateriskscore` | 0.6081622 | 0.2752023 | 2.21 | 0.027 | 0.0683842 | 1.14794 |
+| `c.climateriskscore#c.esg` (interaction) | -0.0125251 | 0.0057702 | -2.17 | 0.030 | -0.0238427 | -0.0012076 |
+| `size` | -0.9086698 | 0.1496521 | -6.07 | 0.000 | -1.202195 | -0.6151443 |
+| `lev` | -3.032839 | 0.5106604 | -5.94 | 0.000 | -4.034441 | -2.031237 |
+| `cf` | -1.54e-10 | 2.71e-10 | -0.57 | 0.570 | -6.85e-10 | 3.77e-10 |
+| `cheat` | 2.146159 | 0.555956 | 3.84 | 0.000 | 1.048752 | 3.243566 |
+| `inventory` | 2.261588 | 0.6045787 | 3.74 | 0.000 | 1.075775 | 3.4474 |
+| `fixed` | 0.0669864 | 0.3772287 | 0.18 | 0.859 | -0.6729047 | 0.8068776 |
+| `growth` | 0.0012661 | 0.0008328 | 1.52 | 0.129 | -0.0003674 | 0.0028996 |
+| `ni` | 1.68e-10 | 1.17e-10 | 1.44 | 0.150 | -6.09e-11 | 3.97e-10 |
+| `gdpgrowth` | 0.3117764 | 0.0359824 | 8.66 | 0.000 | 0.241201 | 0.3823517 |
+| `inf` | 0.1103024 | 0.0330684 | 3.34 | 0.001 | 0.0454425 | 0.1751623 |
+| `_cons` (Intercept) | 4.598739 | 1.276923 | 3.60 | 0.000 | 2.094199 | 7.103278 |
+
+> Notes:
+> - `c.climateriskscore#c.esg` indicates an interaction term between `climateriskscore` and `esg`.
+> - Some coefficients like `cf` and `ni` are very close to zero but statistically insignificant.
+> - All variables appear to be continuous (no dummy indicators).
+
+
+-------------------
+
+
+You are tasked with reconfiguring the existing causal inference pipeline to implement **four distinct causal analysis settings** using **Double Machine Learning (DML)** with **LinearDML** from `econml`. The goal is to estimate causal effects under different modeling assumptions while strictly adhering to the following constraints:
+
+---
+
+### 🎯 **Objective**
+Implement **4 causal effect estimation cases** based on the research design:
+1. **Direct impact of ClimateRiskScore on FV (Tobin's Q)** — *No confounders*
+2. **Direct impact of ClimateRiskScore on FV** — *With confounders*
+3. **Moderating effect of ESG** on the relationship between ClimateRiskScore and FV — *No confounders*
+4. **Moderating effect of ESG** on the relationship between ClimateRiskScore and FV — *With confounders*
+
+> All models must use **`LinearDML`** from `econml`, with **RandomForestRegressor** or **XGBRegressor** as the nuisance estimators (`nuisance_model`).  
+> ❌ **Do NOT use Causal Forests, any non-linear DML variants, or custom estimators.**  
+> ✅ Only use `LinearDML` + `RandomForestRegressor` or `XGBRegressor`.
+
+---
+
+### 🔧 **Input Data & Variables (Use These Exactly)**
+
+```python
+analysis_vars = {
+    # Outcome variable
+    'Tobins_Q': 'FV',
+    # Treatment variable
+    'Climate_Risk_TFIDF': 'ClimateRiskScore',
+    # Moderator
+    'ESG': 'ESG',
+    # Confounders - map to available columns
+    'SIZE': 'SIZE',
+    'LEV': 'LEV', 
+    'STDebt_TA': 'lctat',
+    'STDebt_TL': 'lctlt',
+    'IntExp_Sales': 'chlct',
+    'CashFlow': 'CF',
+    'Cash_TA_lag': 'cheat',
+    'Inventory_Sales': 'Inventory',
+    'Tangible_Asset_Ratio': 'Fixed',
+    'Growth': 'Growth',
+    'Net_Income_After_Tax': 'NI',
+    'GDP_Growth': 'GDPgrowth',
+    'Inf': 'INF',
+    # Additional variables (for model control)
+    'Country': 'Country of Exchange',
+    'Year': 'year',
+    'GICS': 'GICS Industry Name'
+}
+```
+
+> ✅ **Ignore all commented-out variables** (e.g., `Cash_STDebt`, `Board_Meetings`, etc.).
+
+> ⚠️ Ensure **no missing values** in key variables. Use standard imputation (e.g., median fill) only if necessary, but preserve original data loading path.
+
+---
+
+### 📊 **Required Output Metrics (Compute & Report for Each Model)**
+
+For each of the 4 cases, compute and return the following **statistical summaries** (as dictionaries or DataFrames):
+
+#### 1. **Model Summary Statistics**
+| Metric | Formula / Value |
+|-------|------------------|
+| `N` | Number of observations (after dropping NAs) |
+| `F-statistic` | From ANOVA of full model |
+| `p-value (F-test)` | p-value for joint significance of treatment/moderator |
+| `R-squared` | Coefficient of determination |
+| `Adj R-squared` | Adjusted R² |
+| `Root MSE` | RMSE = √(Mean Squared Residuals) |
+
+> ✅ Validate that these match Stata output:
+> - `N`: 1,683  
+> - `F`: 34.09  
+> - `R²`: 0.2098  
+> - `Adj R²`: 0.2037  
+> - `RMSE`: 2.9303  
+
+#### 2. **ANOVA Table (Sum of Squares)**
+| Source | SS | df | MS |
+|--------|----|----|----|
+| Model | Sum of squares explained by treatment + moderators + controls | # predictors | SS / df |
+| Residual | Total SS - Model SS | N - k - 1 | SS / df |
+| Total | Sum of squared deviations of outcome | N - 1 | – |
+
+> Use this to verify R² and RMSE.
+
+#### 3. **Coefficient Table (with Inference)**
+Return a DataFrame with:
+- `Variable`
+- `Coefficient`
+- `Std. Error`
+- `t-value` = coeff / se
+- `p-value` = 2 * (1 - t.cdf(|t|, df))
+- `95% CI Lower`, `95% CI Upper`
+
+> Include all relevant terms:
+> - `ClimateRiskScore`
+> - `ESG`
+> - `ClimateRiskScore × ESG` (interaction term)
+> - All confounders listed above
+> - Intercept (`_cons`)
+
+> For interaction term: `c(climateriskscore)#c(esg)` → use `interaction` feature in `LinearDML`.
+
+---
+
+### 🛠️ **Implementation Requirements**
+
+1. **Keep the original data loading path and preprocessing logic unchanged.**
+2. **Create 4 separate `LinearDML` models**, each configured as follows:
+
+| Case | Treatment | Moderator | Confounders | Interaction Term? |
+|------|-----------|-----------|-------------|-------------------|
+| 1 | `ClimateRiskScore` | None | None | No |
+| 2 | `ClimateRiskScore` | None | All confounders | No |
+| 3 | `ClimateRiskScore` | `ESG` | None | Yes (`ClimateRiskScore × ESG`) |
+| 4 | `ClimateRiskScore` | `ESG` | All confounders | Yes |
+
+3. **Estimator Setup:**
+   ```python
+   from econml.dml import LinearDML
+   from sklearn.ensemble import RandomForestRegressor
+   from xgboost import XGBRegressor
+
+   # Example estimator choice
+   model_treatment = RandomForestRegressor(n_estimators=100, random_state=42)
+   # OR
+   model_treatment = XGBRegressor(n_estimators=100, random_state=42)
+   ```
+
+4. **Fit each model** using:
+   - `fit(y, T, X=confounders, W=moderator if applicable)`
+   - For case 3 & 4: include interaction via `featurizer` or `inference='auto'` with `interaction_only=True`
+
+5. **Extract results** using `.effect()`, `.effect_interval()`, `.coef_`, `.se_`, `.t_stat_`, `.pvalue_`, etc.
+
+6. **Return a dictionary** with keys: `"case_1"`, `"case_2"`, `"case_3"`, `"case_4"` → each containing:
+   - `summary_stats`: dict of metrics above
+   - `coefficient_table`: DataFrame with all coefficients and intervals
+   - `model`: fitted `LinearDML` object (optional, for debugging)
+
+---
+
+### 📌 Final Deliverables (What You Should Return)
+
+After running all 4 models, return:
+```python
+{
+    "case_1": {
+        "summary_stats": {
+            "N": 1683,
+            "F_statistic": 34.09,
+            "p_value_F": 0.0000,
+            "R_squared": 0.2098,
+            "adj_R_squared": 0.2037,
+            "Root_MSE": 2.9303
+        },
+        "anova_table": {
+            "Model": {"SS": 3805.42244, "df": 13, "MS": 292.724803},
+            "Residual": {"SS": 14330.7614, "df": 1669, "MS": 8.58643583},
+            "Total": {"SS": 18136.1838, "df": 1682, "MS": 10.7825112}
+        },
+        "coefficient_table": pd.DataFrame(...)  # Full table as shown
+    },
+    ...
+}
+```
+
+> ✅ Ensure outputs **match the Stata regression table exactly** in structure and interpretation.
+
+> This is the code you need to fix: 
+
+

@@ -1,0 +1,76 @@
+Starting Complete Causal Machine Learning Analysis
+Following exact specifications for production-grade analysis
+============================================================
+STEP 1: DATA LOADING & EXAMINATION
+============================================================
+Original dataset shape: (1683, 30)
+Columns: ['Unnamed: 0', 'Identifier', 'Company Name', 'Country of Exchange', 'GICS Industry Name', 'year', 'FV', 'ESG', 'SIZE', 'LEV', 'lctat', 'lctlt', 'chlct', 'CH', 'CF', 'cheat', 'Inventory', 'Fixed', 'Growth', 'NI', 'BoardMeetings', 'Female', 'CEO', 'G_score', 'E_score', 'GDPgrowth', 'GDPpercapita', 'INF', 'ClimateRiskScore', ' n_years']
+
+Missing values per column:
+Series([], dtype: int64)
+
+============================================================
+STEP 1C & 2: DATA FILTERING & VARIABLE MAPPING
+============================================================
+Mapped dataset shape: (1683, 17)
+Missing values before filtering:
+0
+Rows removed due to missing values: 0
+Final dataset shape: (1683, 17)
+Running all four causal analysis cases...
+
+============================================================
+CASE 1: WITHOUT CONFOUNDERS, WITHOUT MODERATOR
+============================================================
+Case 1 Results:
+Average Treatment Effect (ATE): 0.178226
+95% CI: [-0.071608, 0.428061]
+p-value: 0.162055
+
+============================================================
+CASE 2: WITH CONFOUNDERS, WITHOUT MODERATOR
+============================================================
+Case 2 Results:
+Average Treatment Effect (ATE): -0.131606
+95% CI: [-0.208651, -0.054560]
+p-value: 0.038999
+
+============================================================
+CASE 3: WITHOUT CONFOUNDERS, WITH MODERATOR
+============================================================
+Case 3 Results:
+Average Treatment Effect (ATE): -0.229820
+95% CI: [-0.533100, 0.073460]
+p-value: 0.137485
+
+============================================================
+CASE 4: WITH CONFOUNDERS, WITH MODERATOR
+============================================================
+Case 4 Results:
+Average Treatment Effect (ATE): -0.267370
+95% CI: [-0.351941, -0.182799]
+p-value: 0.042438
+
+CASE_1 RESULTS:
+  Average Treatment Effect (ATE): 0.178226
+  95% Confidence Interval: [-0.071608, 0.428061]
+  p-value: 0.162055
+
+CASE_2 RESULTS:
+  Average Treatment Effect (ATE): -0.131606
+  95% Confidence Interval: [-0.208651, -0.054560]
+  p-value: 0.038999
+
+CASE_3 RESULTS:
+  Average Treatment Effect (ATE): -0.229820
+  95% Confidence Interval: [-0.533100, 0.073460]
+  p-value: 0.137485
+
+CASE_4 RESULTS:
+  Average Treatment Effect (ATE): -0.267370
+  95% Confidence Interval: [-0.351941, -0.182799]
+  p-value: 0.042438
+
+================================================================================
+ANALYSIS COMPLETED SUCCESSFULLY
+================================================================================
