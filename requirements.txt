@@ -1,0 +1,13 @@
+scikit-learn
+numpy
+pandas
+polars
+Cython
+PyMuPDF
+nltk
+causalml
+econml
+dowhy
+shap
+seaborn
+matplotlib

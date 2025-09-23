@@ -1,0 +1,65 @@
+Starting Complete Causal Machine Learning Analysis
+Following exact specifications for production-grade analysis
+============================================================
+STEP 1: DATA LOADING & EXAMINATION
+============================================================
+Original dataset shape: (5101, 33)
+Columns: ['path_to_file', 'year', 'company_name', 'company_code', 'ClimateRiskScore', 'Index', 'Identifier', 'Company Name', 'Country of Exchange', 'GICS Industry Name', 'Year', 'FV', 'ESG', 'SIZE', 'LEV', 'lctat', 'lctlt', 'chlct', 'CH', 'CF', 'cheat', 'Inventory', 'Fixed', 'Growth', 'NI', 'BoardMeetings', 'Female', 'CEO', 'G_score', 'E_score', 'GDPgrowth', 'GDPpercapita', 'INF']
+
+Missing values per column:
+Index                  500
+Identifier             500
+Company Name           500
+Country of Exchange    500
+GICS Industry Name     500
+Year                   500
+FV                     500
+ESG                    500
+SIZE                   500
+LEV                    500
+lctat                  500
+lctlt                  500
+chlct                  500
+CH                     500
+CF                     500
+cheat                  500
+Inventory              500
+Fixed                  500
+Growth                 500
+NI                     500
+BoardMeetings          500
+Female                 500
+CEO                    500
+G_score                500
+E_score                500
+GDPgrowth              500
+GDPpercapita           500
+INF                    500
+dtype: int64
+
+============================================================
+STEP 1C & 2: DATA FILTERING & VARIABLE MAPPING
+============================================================
+Mapped dataset shape: (5101, 24)
+Missing values before filtering:
+11000
+Rows removed due to missing values: 500
+Final dataset shape: (4601, 24)
+
+============================================================
+STEP 3: TRAIN/TEST SPLIT
+============================================================
+Train set size: 3680 (80.0%)
+Test set size: 921 (20.0%)
+
+Country distribution in train/test:
+India: Train 54.6%, Test 54.6%
+Malaysia: Train 32.9%, Test 32.9%
+South Africa: Train 7.0%, Test 6.9%
+Vietnam: Train 2.8%, Test 2.8%
+Philippines: Train 2.8%, Test 2.7%
+
+============================================================
+STEP 5A: LINEAR REGRESSION BENCHMARK
+============================================================
+Error during analysis: Singular matrix
