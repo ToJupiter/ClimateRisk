@@ -7,6 +7,9 @@ Following exact specifications for production-grade causal inference analysis
 import pandas as pd
 import numpy as np
 import warnings
+import matplotlib.pyplot as plt
+import seaborn as sns
+import shap
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
@@ -199,12 +202,9 @@ class CausalAnalysis:
         else:
             inference_result = dml.effect_inference()
             
-        # Extract p-value for the treatment effect
         try:
-            # Get p-value directly from inference result
-            treatment_p = inference_result.pvalue().mean() # Average p-value across samples
+            treatment_p = inference_result.pvalue().mean() 
         except:
-            # Fallback calculation using mean effect and CI
             effect_se = (ci_upper - ci_lower) / (2 * 1.96)
             treatment_t = effect_mean / effect_se if effect_se > 0 else 0
             treatment_p = 2 * (1 - stats.norm.cdf(np.abs(treatment_t)))
@@ -236,14 +236,96 @@ class CausalAnalysis:
         self.run_case_analysis(4, include_confounders=True, include_moderator=True)
         
         return self.results
+    
+    def plot_distribution_plots(self):
+        """Plot histograms + KDE for Tobins_Q, Climate_Risk_TFIDF, ESG (3 columns horizontally, 3 colors)"""
+        vars_to_plot = ['Tobins_Q', 'Climate_Risk_TFIDF', 'ESG']
+        titles = ['Firm Value (Tobin\'s Q)', 'Climate Risk (TFIDF)', 'ESG Score']
+        colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
+        bins_list = [60, 30, 30]  # More bins for Tobins_Q for finer resolution
 
-def main():
+        fig, axes = plt.subplots(1, 3, figsize=(18, 5))
+        for i, (var, color) in enumerate(zip(vars_to_plot, colors)):
+            data = self.df[var]
+            if var == 'Tobins_Q':
+                # Clip extreme values for better visualization
+                data = data.clip(upper=15)
+                axes[i].set_xlim(0, 14)
+            sns.histplot(data, kde=True, ax=axes[i], bins=bins_list[i], color=color)
+            axes[i].set_title(f'{titles[i]} - Distribution')
+            axes[i].set_xlabel(var)
+
+        plt.tight_layout()
+        plt.savefig('distribution_plots.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        print("Saved: distribution_plots.png")
+
+    def plot_cate_by_esg(self):
+        """Plot Conditional Average Treatment Effect (CATE) by ESG score"""
+        case4 = self.results.get('case_4')
+        if not case4:
+            print("Case 4 model not found. Run case 4 first.")
+            return
+
+        Y, T, X, W, _ = self.prepare_case_data(include_confounders=True, include_moderator=True)
+        dml = case4['model']
+        cate = dml.effect(X, T0=0, T1=1)  # or just dml.effect(X) if binary/default treatment
+
+        # Bin ESG scores for smoother plot
+        esg_series = self.df['ESG']
+        bins = pd.qcut(esg_series, q=10, duplicates='drop')
+        cate_series = pd.Series(cate, index=esg_series.index)
+
+        grouped = cate_series.groupby(bins).agg(['mean', 'count', 'std'])
+        grouped['ci_lower'] = grouped['mean'] - 1.96 * grouped['std'] / np.sqrt(grouped['count'])
+        grouped['ci_upper'] = grouped['mean'] + 1.96 * grouped['std'] / np.sqrt(grouped['count'])
+
+        plt.figure(figsize=(10, 6))
+        plt.plot(grouped.index.astype(str).str.replace(', ', ' to ').str.strip('()'), grouped['mean'], 
+                 marker='o', linestyle='-', label='CATE')
+        plt.fill_between(range(len(grouped)), grouped['ci_lower'], grouped['ci_upper'], alpha=0.3, label='95% CI')
+        plt.title('CATE of Climate Risk on Firm Value by ESG Score')
+        plt.xlabel('ESG Score Bins (Quantiles)')
+        plt.ylabel('Estimated Treatment Effect')
+        plt.xticks(rotation=45)
+        plt.legend()
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        plt.savefig('cate_by_esg.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        print("Saved: cate_by_esg.png")
+
+    def plot_shap_feature_importance(self):
+        """Plot SHAP feature importance for outcome model in Case 4"""
+        case4 = self.results.get('case_4')
+        if not case4:
+            print("Case 4 model not found. Run case 4 first.")
+            return
+
+        _, _, X, _, confounder_cols = self.prepare_case_data(include_confounders=True, include_moderator=True)
+        model_y = case4['model'].model_y
+
+
+        # Create SHAP explainer
+        explainer = shap.Explainer(model_y, X, feature_names=confounder_cols)
+        shap_values = explainer(X)
+
+        # Plot summary plot
+        plt.figure(figsize=(10, 8))
+        shap.summary_plot(shap_values, X, feature_names=confounder_cols, show=False)
+        plt.title("SHAP Feature Importance for Predicting Tobin's Q")
+        plt.tight_layout()
+        plt.savefig('shap_feature_importance.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        print("Saved: shap_feature_importance.png")
+
+def causal_main(path_to_combined_csv: str):
     """Main execution function"""
     print("Starting Complete Causal Machine Learning Analysis")
     print("Following exact specifications for production-grade analysis")
     
     # Initialize analysis with temporary file
-    analysis = CausalAnalysis("/mnt/e/NEUConference/ClimateRisk/output_tfidf/Combined_Company_Data_2022_2024_Final2.csv")
+    analysis = CausalAnalysis(path_to_combined_csv)
     
     # Execute all steps
     try:
@@ -253,6 +335,11 @@ def main():
         
         # Run all four cases
         results = analysis.run_all_cases()
+
+        analysis.plot_distribution_plots()
+        analysis.plot_cate_by_esg()
+        # Should add here
+        # analysis.plot_shap_feature_importance()
         
         # Print results
         for case_key, result in results.items():
@@ -271,4 +358,4 @@ def main():
         traceback.print_exc()
 
 if __name__ == "__main__":
-    main()
+    causal_main()

@@ -8,3 +8,6 @@ nltk
 causalml
 econml
 dowhy
+shap
+seaborn
+matplotlib

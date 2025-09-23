@@ -6,6 +6,9 @@ import os
 
 # Base directory where the zipped/cloned project resides
 # This is the parent directory of folders like 'Dương', 'Giang', etc.
+"""
+    Old configs that we do not use anymore: PROJECT_DATA_ROOT, OUTPUT_TXT_ROOT, OUTPUT_TFIDF_ROOT. New configs are below.
+"""
 PROJECT_DATA_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) # Adjust if needed
 
 # Output directory for the converted .txt files
@@ -49,3 +52,4 @@ FINAL_DATASET_FILE = os.path.join(os.path.dirname(__file__), 'data', 'final_data
 
 NEW_DATASET_FILE = "/mnt/e/NEUConference/Input_Variable"
 NEW_DATASET_OUTPUT = "/mnt/e/NEUConference/ClimateRisk/output_txt/Additional"
+NEW_FINAL_CSV_PATH = "/mnt/e/NEUConference/ClimateRisk/output_tfidf/Combined_Company_Data_2022_2024_Final2.csv"
