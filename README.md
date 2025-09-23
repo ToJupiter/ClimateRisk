@@ -2,6 +2,9 @@
 
 This project analyzes the causal impact of climate-related risk disclosures in corporate annual reports on a company's firm value, measured by Tobin's Q. The analysis pipeline involves several stages: text extraction from PDF reports, TF-IDF score calculation for climate risk keywords, and a causal machine learning analysis using Double Machine Learning (DML).
 
+# Note
+You should change the config.py based on your preferences of the files.
+
 ## Project Overview
 
 The primary goal is to answer the question: **Does increased discussion of climate risk in annual reports causally affect a company's financial valuation?**
