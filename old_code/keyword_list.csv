@@ -1,0 +1,756 @@
+,keywords
+0,Transition risks
+1,Carbon Dioxide
+2,Dual Carbon
+3,Low Carbon
+4,Natural Gas
+5,Solar Energy
+6,Hydropower
+7,Fossil Fuels
+8,Wind Power
+9,Wind Energy
+10,Physical risks
+11,Climate
+12,Rain and Snow
+13,Freezing
+14,Heavy Rainfall
+15,Carbon Emissions
+16,Carbon Reduction
+17,Decarbonization
+18,Energy Efficiency
+19,Renewable Energy
+20,Petroleum
+21,Biomass Energy
+22,Geothermal Energy
+23,Photovoltaic
+24,Precipitation
+25,Drought Disasters
+26,High Temperatures
+27,Carbon Peak
+28,Carbon Trading
+29,Coal-fired Power
+30,Coal
+31,Energy Reduction
+32,Energy Consumption
+33,Nuclear Power
+34,Drought
+35,Floods
+36,Drought Conditions
+37,Carbon Neutrality
+38,Carbon Sink
+39,Zero Carbon
+40,Green Energy
+41,Energy Storage
+42,Paris Agreement
+43,Clean Energy
+44,Temperature
+45,Flooding
+46,Low Temperatures
+47,Ice and Snow
+48,Wave Energy
+49,Ozone Layer
+50,Atmospheric Temperature
+51,Air Pollution
+52,Electric Vehicle (EV)
+53,Waste Gas
+54,Wastewater
+55,Wind Power Generation
+56,Wind Resources
+57,Sea Level
+58,Nuclear Energy
+59,Flooding and Waterlogging
+60,Environmental Protection
+61,Environmental Sustainability
+62,Dust
+63,Extreme Weather
+64,Emission Reduction
+65,Kyoto Protocol
+66,Sustainable Energy
+67,Air Quality
+68,Woodland
+69,Green Credit
+70,Energy Reserves
+71,Energy and Environment
+72,Energy Saving
+73,Energy and Climate
+74,Energy Transition
+75,Climate Change
+76,Climate System
+77,Gas Emissions
+78,Clean Atmosphere
+79,Clean Water
+80,Global Warming
+81,Global Decarbonization
+82,Thermal Energy
+83,Ecosystem
+84,Water Resources
+85,Solar Thermal Energy
+86,Carbon Price
+87,Carbon Energy
+88,Carbon Market
+89,Carbon Tax
+90,Weather and Climate
+91,Greenhouse Gases (GHGs)
+92,Greenhouse Gas Emissions
+93,Pollution Prevention
+94,New Energy
+95,Flue Gas
+96,Coastal Areas
+97,Natural Disaster
+98,Hailstorm
+99,Heavy Snowfall
+100,Storm
+101,Storm Damage
+102,Sea Level Rise
+103,Sea Water Rise
+104,Tsunami
+105,Severe Winter
+106,Environmental Destruction
+107,Extreme Heat
+108,Extreme Cold
+109,Snowfall
+110,Rainfall
+111,Hurricane
+112,Intense Heat
+113,Tornado
+114,Drainage
+115,Climate Emergency
+116,Climate Disaster
+117,Heat Wave
+118,Weather Event
+119,Temperature Rise
+120,Warm Climate
+121,Cyclone
+122,Coldest
+123,Warmest
+124,Wave Power Generation
+125,Plug-in Hybrid Electric Vehicle (PHEV)
+126,Environmental Standards
+127,Environmental Policy
+128,Hybrid Electric Vehicle (HEV)
+129,Greenhouse Gas Reduction
+130,Energy Consumption Reduction
+131,Sustainability
+132,Renewable
+133,Renewable Electricity
+134,Energy Cost
+135,Energy Independence
+136,Energy Bill
+137,Energy Management
+138,Energy Technology
+139,Energy Regulation
+140,Energy Policy
+141,Emissions Trading Scheme (ETS)
+142,Climate Discourse
+143,Climate Action
+144,Climate Policy
+145,Fuel Cost
+146,Gas Cost
+147,Fuel Efficiency
+148,Alternative Energy
+149,Climate Response
+150,Gas regulation
+151,environmental awareness
+152,green preference
+153,sustainable choice
+154,Climate catastrophe
+155,glacier melt
+156,climate disruptions
+157,Emission rate
+158,nitrogen oxide
+159,CO2 emissions
+160,Chemical waste
+161,industrial waste
+162,toxic waste
+163,air contamination
+164,contaminated soil
+165,sustainability
+166,climate impact
+167,carbon footprint
+168,flood
+169,storm
+170,heatwave
+171,wildfire
+172,typhoon
+173,extreme rainfall
+174,disaster loss
+175,property damage
+176,business interruption
+177,sea level
+178,desertification
+179,soil erosion
+180,water scarcity
+181,biodiversity loss
+182,carbon tax
+183,emission trading
+184,ETS
+185,environmental regulation
+186,low-carbon policy
+187,compliance cost
+188,carbon cap
+189,green technology
+190,clean tech
+191,low-carbon innovation
+192,technological transformation
+193,equipment upgrade
+194,digital transition
+195,carbon price volatility
+196,green demand
+197,consumer shift
+198,fossil fuel decline
+199,industry restructuring
+200,asset stranding
+201,greenwashing
+202,ESG rating
+203,corporate image
+204,stakeholder pressure
+205,sustainability reputation
+206,social responsibility
+207,investor trust
+208,media exposure
+209,carbon capture
+210,green investment
+211,sustainability strategy
+212,resilience building
+213,climate adaptation
+214,renewable project
+215,eco-innovation
+216,green financing
+217,Acid fog
+218,Atmosphere
+219,Debris flow
+220,Disaster relief
+221,Sand dust
+222,Exhaust gas
+223,Flood disaster
+224,Fog prevention
+225,Harmful organisms
+226,Landslide
+227,Ocean acidification
+228,Rainy day
+229,Severe winter
+230,Snow disaster
+231,Storm surge
+232,Typhoon
+233,Water crisis
+234,Waterlogging prevention
+235,Acid rain
+236,Atmospheric effect
+237,Cold
+238,Desert
+239,Suspended dust
+240,El Niño
+241,Water disaster
+242,Gale
+243,Harsh winter
+244,Lightning
+245,Particulate matter
+246,Raining
+247,Scorching heat
+248,Smog prevention
+249,Air temperature
+250,Vegetation
+251,Fire disaster
+252,Atmospheric quality
+253,Cold current
+254,Sanding
+255,Earthquake
+256,Fire prevention
+257,Foul odor
+258,Hydrogen sulfide
+259,Meteorology
+260,Nitrogen compounds
+261,Permafrost
+262,Amount of rainfall
+263,Smoke
+264,Soil erosion
+265,Tropical storm
+266,Volcano
+267,Mountain wildfire
+268,Ambient air
+269,Disaster prevention
+270,Drought resistance
+271,Ecological environment
+272,Flood control
+273,Flue gas
+274,Freezing rain
+275,Harmful gases
+276,Heavy fog
+277,Insect pest
+278,Mountain torrents
+279,Nitrogen oxides
+280,PM2.5
+281,Rainwater
+282,Severe drought
+283,Snow and ice
+284,Temperature drop
+285,Warming
+286,Water accumulation
+287,Wind and hail
+288,Afforestation
+289,Alternative Energy
+290,Alternative Fuel
+291,Battery Electric
+292,Bioenergy
+293,Carbon Allowance
+294,Carbon Asset
+295,Carbon Border Tax
+296,Carbon Capture
+297,Carbon Dioxide
+298,Carbon Emissions
+299,Carbon Finance
+300,Carbon Footprint
+301,Carbon Inclusive
+302,Carbon Intensity
+303,Carbon Label
+304,Carbon Monoxide
+305,Carbon Neutrality
+306,Carbon Peak
+307,Carbon Pricing
+308,Carbon Sink
+309,Carbon Tax
+310,Carbon Trading
+311,Carbonization
+312,Circular Economy
+313,Circulating Water
+314,Clean Development
+315,Clean Energy
+316,Clean Fuel
+317,Clean Production
+318,Coal Saving
+319,Coal-fired Power
+320,Copenhagen Accord
+321,Decarbonization
+322,Desertification Control
+323,Eco-friendly
+324,Ecological Conservation
+325,Ecologicalization
+326,Electric Vehicle
+327,Electricity Saving
+328,Emission Reduction
+329,Energy Saving
+330,Energy Conservation
+331,Energy Consumption behavior
+332,Energy Consumption
+333,Energy Consumption Reduction
+334,Energy Conversion
+335,Energy Crisis
+336,Energy Performance
+337,Energy Efficiency
+338,Energy Management
+339,Energy Resources
+340,Energy Reduction
+341,Energy Security
+342,Energy Storage
+343,Energy Structure
+344,Energy Technology
+345,Energy Transition
+346,Energy Utilization
+347,Environmental Awareness
+348,Environmental Exchange
+349,Environmental Governance
+350,Environmental Law
+351,Environmental Monitoring
+352,Environmental Conservation
+353,Eco-friendly practices
+354,Environmental Protection
+355,Environmental Standard
+356,Forest Rights
+357,Fossil Energy
+358,Fossil Fuel
+359,Fuel Saving
+360,Geothermal Energy
+361,Green Bond
+362,Green Consumption
+363,Green Credit
+364,Green Development
+365,Green Electricity
+366,Green Energy
+367,Green Finance
+368,Green Office
+369,Green Premium
+370,Green Transition
+371,Greenhouse Gas
+372,Hazardous Solid Waste
+373,Hazardous Waste
+374,High-efficiency Fuel
+375,Hydro Project
+376,Hydroelectric Power
+377,Hydrogen
+378,Hydrogen Energy
+379,Hydropower
+380,Hydropower Resources
+381,Liquid Fuel
+382,Low-Carbon
+383,Luminous Efficacy
+384,Ministry of Ecology and Environment
+385,Mineral fuels
+386,Natural Gas
+387,Net-zero Emissions
+388,New Energy
+389,New Materials
+390,Nuclear Energy
+391,Nuclear Power
+392,Ocean Energy
+393,Offshore Power
+394,Paris Agreement
+395,Photoelectricity
+396,Photovoltaic
+397,Pollution
+398,Pollution Discharge
+399,Pollution Prevention
+400,Pollution Reduction
+401,Premium Energy
+402,Renewable
+403,Resource Conservation
+404,Resource Tax
+405,Resource Utilization Level
+406,Smart Grid
+407,Light energy
+408,Solar Energy
+409,Solar Thermal
+410,Solid Waste
+411,Solid refuse
+412,Sulfur Dioxide
+413,Sustainable Development
+414,Thermal Power Generation
+415,Three Wastes
+416,Tidal Energy
+417,Waste
+418,Waste Gas
+419,Waste Incineration
+420,Waste-to-energy
+421,Wastewater
+422,Water Conservation
+423,Hydraulic resources
+424,Water Resources
+425,Water Rights
+426,Water Saving
+427,Wave Energy
+428,Wind Energy
+429,Wind Power
+430,Wind Power Generation
+431,Wind Turbine
+432,Zero-carbon
+433,Greenhouse gases
+434,Earthquake
+435,Hurricane
+436,Tornado
+437,Storm Surge
+438,Snow
+439,Ice
+440,Frost
+441,Waterlogging
+442,Catastrophe insurance
+443,New development concept
+444,Green water and green mountains
+445,Green environmental protection
+446,Environmentally friendly
+447,Green economy
+448,Climate improvement
+449,Low carbon cities
+450,Sponge cities
+451,Pollution control
+452,Environmental disclosure
+453,Low carbon transformation
+454,Peak carbon emissions
+455,Net-zero emissions
+456,Energy conservation Emission cut
+457,Carbon emission reduction
+458,Reduce emissions
+459,Carbon footprint
+460,Carbon sequestration
+461,Energy regulation
+462,Renewable
+463,Clean power
+464,Secondary energy
+465,Scale solar energy
+466,Wind farms
+467,Transmission network
+468,Energy retrofit
+469,Energy investment
+470,Clean fuels
+471,Renewable resources
+472,Cleaner production
+473,Resource conservation
+474,Consumption reduction
+475,Recycling
+476,Recovery
+477,Clean industry
+478,Degradation
+479,Electricity
+480,Battery
+481,Battery power
+482,New energy Vehicle
+483,Charging pile
+484,Plug-in hybrid
+485,Forest conservation
+486,Green building
+487,onshore wind
+488,carbon intensity
+489,electric motor
+490,energy application
+491,provide energy
+492,produce electricity
+493,efficient solution
+494,help state
+495,global warm
+496,environmental standard
+497,power generator
+498,power agreement
+499,solar pv
+500,supply energy
+501,energy efficient
+502,scale solar
+503,electric hybrid
+504,need clean
+505,source power
+506,gas vehicle
+507,charge station
+508,effort energy
+509,clean water
+510,pass house
+511,central design
+512,carbon free
+513,autonomous vehicle
+514,vehicle manufacturer
+515,driver assistance
+516,future energy
+517,electrical energy
+518,motor control
+519,solar installation
+520,government india
+521,combine heat
+522,now ice
+523,electric bus
+524,renewable natural
+525,motor pollution
+526,distribute power
+527,promote use
+528,environmental benefit
+529,farm project
+530,integrate resource
+531,laser diode
+532,electrical vehicle
+533,deliver energy
+534,protect environment
+535,world population
+536,fast charge
+537,solar farm
+538,cell power
+539,manage energy
+540,energy regulatory
+541,energy team
+542,invest energy
+543,obama administration
+544,cycle gas
+545,heat power
+546,coal gasification
+547,environmental concern
+548,capacity energy
+549,unite nation
+550,co emiss
+551,scop
+552,group chief
+553,climat chang
+554,product servic
+555,includ climat
+556,execut committe
+557,science base
+558,local base
+559,scenario analysi
+560,transit low
+561,weather event
+562,member execut committe
+563,low carbon
+564,scope emiss
+565,global warm
+566,reduct target
+567,ghg emiss
+568,base emiss
+569,renew power
+570,relat risk
+571,environ social
+572,board director
+573,climat risk
+574,relat risk opportun
+575,chief execut
+576,natur ga
+577,ga emiss
+578,carbon intens
+579,impact climat
+580,greenhous ga emiss
+581,carbon neutral
+582,climat relat risk
+583,energi consumpt
+584,emiss intens
+585,impact climat chang
+586,methan emiss
+587,emiss reduct
+588,risk manag
+589,tom co
+590,transit low carbon
+591,emiss scope
+592,energi effici
+593,risk opportun
+594,carbon economi
+595,enterpris risk
+596,environment impact
+597,manag process
+598,extrem weather
+599,oll sand
+600,total scope
+601,scop ghg
+602,busi travel
+603,long term
+604,renew electr
+605,environment footprint
+606,group emiss
+607,indirect co emiss
+608,scop ghg emiss
+609,carbon dioxide
+610,carbon emission
+611,carbon peak
+612,carbon neutral
+613,dual carbon
+614,carbon emission reduction
+615,carbon trading
+616,carbon sink
+617,Low-carbon
+618,carbon reduction carbon
+619,calcium carbon
+620,zero carbon
+621,energy saving
+622,coal electric
+623,green
+624,solar renewable
+625,renewable energy
+626,coal
+627,stored energy
+628,hydro
+629,oil
+630,consumption reduction
+631,fossil energy
+632,biomass
+633,Paris Agreement
+634,wind
+635,geothermal
+636,nuclear
+637,clean energy
+638,wind energy
+639,Optoelectronics
+640,weather
+641,dry
+642,temperature
+643,rain
+644,snow
+645,deluge
+646,freezing
+647,drought
+648,low temperature
+649,heavy rain
+650,high temperature
+651,adaptive capacity
+652,air burst
+653,airburst
+654,airbursts
+655,apocalypse
+656,apocalypses
+657,ash fall
+658,ashfall
+659,avalanche
+660,avalanches
+661,blizzard
+662,blizzards
+663,calamity
+664,cataclysm
+665,cataclysms
+666,coastal erosion
+667,cold wave
+668,coping capacity
+669,cyclone
+670,debacle
+671,debacles
+672,derecho
+673,derechos
+674,disaster
+675,disaster risk
+676,disaster risk management
+677,disaster risks
+678,disasters
+679,earthquake
+680,earthquakes
+681,El Nino
+682,extreme heat
+683,extreme rain
+684,extreme rainfall
+685,extreme rains
+686,extreme temperature
+687,extreme temperatures
+688,extreme weather
+689,firestorm
+690,firestorms
+691,flooded
+692,floodings
+693,fogs
+694,forest fire
+695,forest fires
+696,freezes
+697,gale
+698,gales
+699,geophysical hazard
+700,geophysical hazards
+701,hail
+702,hailstorm
+703,hailstorms
+704,heat waves
+705,heavy snow
+706,high wind
+707,high winds
+708,hydrological hazard
+709,hydrological hazards
+710,La Nina
+711,landfall
+712,landfalls
+713,landslide
+714,landslides
+715,lava flow
+716,lava flows
+717,microburst
+718,microbursts
+719,mudslide
+720,mudslides
+721,natural hazard
+722,natural hazards
+723,rainfalls
+724,rainstorm
+725,rainstorms
+726,rock fall
+727,rock-fall
+728,rogue wave
+729,rogue waves
+730,seiche
+731,seiches
+732,severe winter condition
+733,severe winter conditions
+734,snowstorm
+735,snowstorms
+736,storms
+737,thunderstorm
+738,thunderstorms
+739,tornadoes
+740,tremor
+741,tsunami
+742,tsunamis
+743,twister
+744,typhoons
+745,volcanic
+746,volcanos
+747,whirlpool
+748,whirlpools
+749,wildfires
+750,winds
+751,windstorm
+752,windstorms
+753,winterstorm
+754,winterstorms
