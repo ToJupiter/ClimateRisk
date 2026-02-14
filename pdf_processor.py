@@ -3,99 +3,62 @@ import fitz
 from config import PROJECT_DATA_ROOT, OUTPUT_TXT_ROOT, PDF_EXTENSION, TEXT_EXTENSION
 import logging
 from concurrent.futures import ProcessPoolExecutor, as_completed
-import subprocess
-import tempfile
-import shutil
+import sys
+import io
+from contextlib import redirect_stderr
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def _extract_with_pymupdf(pdf_path):
-    doc = fitz.open(pdf_path)
-    text = ""
-    for page_num in range(len(doc)):
-        page = doc.load_page(page_num)
-        text += page.get_text()
-    doc.close()
-    return text
-
-def _extract_with_pdfplumber(pdf_path):
-    import pdfplumber
-    text = ""
-    with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-    return text
-
-def _extract_with_pypdf2(pdf_path):
-    import PyPDF2
-    text = ""
-    with open(pdf_path, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-    return text
-
-def _extract_with_pdftotext(pdf_path):
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as tmp:
-        tmp_path = tmp.name
-    try:
-        result = subprocess.run(['pdftotext', pdf_path, tmp_path], capture_output=True, text=True, timeout=30)
-        if result.returncode == 0:
-            with open(tmp_path, 'r', encoding='utf-8', errors='ignore') as f:
-                return f.read()
-        else:
-            raise Exception(f"pdftotext failed: {result.stderr}")
-    finally:
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
-
-# def _extract_with_ocr(pdf_path):
-#     import pytesseract
-#     from pdf2image import convert_from_path
-#     images = convert_from_path(pdf_path, dpi=200)
-#     text = ""
-#     for image in images:
-#         text += pytesseract.image_to_string(image, lang='eng') + "\n"
-#     return text
-
 def convert_pdf_to_text(pdf_path, output_txt_path):
+    """
+    Converts a single PDF file to a text file using PyMuPDF.
+
+    Args:
+        pdf_path (str): Path to the input PDF file.
+        output_txt_path (str): Path where the output text file will be saved.
+    """
+
     try:
         os.makedirs(os.path.dirname(output_txt_path), exist_ok=True)
-        text = None
-        methods = [
-            ("pymupdf", _extract_with_pymupdf),
-            ("pdfplumber", _extract_with_pdfplumber),
-            ("pypdf2", _extract_with_pypdf2),
-            ("pdftotext", _extract_with_pdftotext)
-            # ("ocr", _extract_with_ocr)
-        ]
-        for method_name, method_func in methods:
-            try:
-                text = method_func(pdf_path)
-                if text and text.strip():
-                    # logger.info(f"Successfully extracted text from {pdf_path} using {method_name}")
-                    break
-            except Exception as e:
-                # logger.warning(f"Method {method_name} failed for {pdf_path}: {e}")
-                continue
-        if not text or not text.strip():
-            raise Exception("All extraction methods failed or returned empty text")
+
+        saved_stderr_fd = os.dup(sys.stderr.fileno())
+        r_fd, w_fd = os.pipe()
+        os.dup2(w_fd, sys.stderr.fileno())
+        os.close(w_fd)
+        
+        py_stderr_buffer = io.StringIO()
+        with redirect_stderr(py_stderr_buffer):
+            doc = fitz.open(pdf_path)
+            text = ""
+
+            for page_num in range(len(doc)):
+                page = doc.load_page(page_num)
+                text += page.get_text()
+        
+        stderr_output = py_stderr_buffer.getvalue()
+        if stderr_output:
+            logger.warning(f"MuPDF error/warning for {pdf_path}: {stderr_output.strip()}")
+
+        if text == "":
+            logger.warning(f"No text extracted for {pdf_path}")
+                
+
         with open(output_txt_path, "w", encoding='utf-8') as txt_file:
             txt_file.write(text)
-        success_info = f"Converted {pdf_path} into {output_txt_path}"
-        # logger.info(f"Converted {pdf_path} into {output_txt_path}")
-        return True, pdf_path, success_info
+        
+        logger.info(f"Converted {pdf_path} into {output_txt_path}")
+        doc.close()
+        return True, pdf_path
+    
     except Exception as e:
-        error_info = f"Error converting {pdf_path}: {e}"
-        # logger.error(f"Error converting {pdf_path}: {e}")
-        return False, pdf_path, error_info
+        logger.error(f"PyMuPDF failed for converting {pdf_path}: {e}")
+        return False, pdf_path
     
 def _prepare_task(filename, dirpath, input_root_dir, output_root_dir):
+    """
+        Helper function
+    """
     if filename.lower().endswith(PDF_EXTENSION):
         pdf_file_path = os.path.join(dirpath, filename)
         relative_path = os.path.relpath(dirpath, input_root_dir)
@@ -107,6 +70,14 @@ def _prepare_task(filename, dirpath, input_root_dir, output_root_dir):
     
 
 def process_all_pdfs(input_root_dir=PROJECT_DATA_ROOT, output_root_dir=OUTPUT_TXT_ROOT, max_workers=None):
+    """
+    Recursively walks through the input directory, finds PDFs,
+    and converts them to text files, preserving the folder structure.
+
+    Args:
+        input_root_dir (str): Root directory containing PDF files (e.g., 'Dương', 'Giang').
+        output_root_dir (str): Root directory where text files will be saved.
+    """
     logger.info(f"Starting PDF processing from '{input_root_dir}'")
     logger.info(f"Text files will be saved to '{output_root_dir}'")
     tasks = []
@@ -124,12 +95,11 @@ def process_all_pdfs(input_root_dir=PROJECT_DATA_ROOT, output_root_dir=OUTPUT_TX
             for pdf_path, txt_path in tasks
         }
 
+        # Collect results (and log errors if needed)
         for future in as_completed(future_to_task):
-            success, pdf_path, log_msg = future.result()
-            if success:
-                logger.info(log_msg)
-            else:
-                logger.error(log_msg)
+            success, pdf_path = future.result()
+            if not success:
+                logger.error(f"Failed to convert {pdf_path}")
 
     logger.info("PDF processing completed.")
 

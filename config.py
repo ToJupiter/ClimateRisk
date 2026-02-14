@@ -50,6 +50,6 @@ CLIMATE_RISK_KEYWORDS = [keyword.lower() for keyword in CLIMATE_RISK_KEYWORDS_RA
 EXISTING_VARS_FILE = os.path.join(os.path.dirname(__file__), 'data', 'existing_vars.csv') 
 FINAL_DATASET_FILE = os.path.join(os.path.dirname(__file__), 'data', 'final_dataset_for_modeling.csv')
 
-NEW_DATASET_FILE = "E:\\NEUConference\\AR lan 2\\Dương"
+NEW_DATASET_FILE = "/mnt/e/NEUConference/AR lan 2/Dương"
 NEW_DATASET_OUTPUT = "output_txt2/AR_lan_2/Dương"
 NEW_FINAL_CSV_PATH = "/mnt/e/NEUConference/ClimateRisk/output_tfidf/Combined_Company_Data_2022_2024_Final2.csv"
