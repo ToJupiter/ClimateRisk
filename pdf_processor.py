@@ -3,9 +3,6 @@ import fitz
 from config import PROJECT_DATA_ROOT, OUTPUT_TXT_ROOT, PDF_EXTENSION, TEXT_EXTENSION
 import logging
 from concurrent.futures import ProcessPoolExecutor, as_completed
-import sys
-import io
-from contextlib import redirect_stderr
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -18,43 +15,46 @@ def convert_pdf_to_text(pdf_path, output_txt_path):
         pdf_path (str): Path to the input PDF file.
         output_txt_path (str): Path where the output text file will be saved.
     """
+    fitz.TOOLS.mupdf_display_errors(False)
+    fitz.TOOLS.mupdf_display_warnings(False)
+    fitz.TOOLS.reset_mupdf_warnings()
 
     try:
         os.makedirs(os.path.dirname(output_txt_path), exist_ok=True)
+        text = ""
 
-        saved_stderr_fd = os.dup(sys.stderr.fileno())
-        r_fd, w_fd = os.pipe()
-        os.dup2(w_fd, sys.stderr.fileno())
-        os.close(w_fd)
-        
-        py_stderr_buffer = io.StringIO()
-        with redirect_stderr(py_stderr_buffer):
-            doc = fitz.open(pdf_path)
-            text = ""
+        with fitz.open(pdf_path) as doc:
+            if doc.is_dirty:
+                logger.warning(f"PDF was repaired upon opening: {pdf_path}")
 
             for page_num in range(len(doc)):
                 page = doc.load_page(page_num)
                 text += page.get_text()
         
-        stderr_output = py_stderr_buffer.getvalue()
+        stderr_output = fitz.TOOLS.mupdf_warnings()
         if stderr_output:
             logger.warning(f"MuPDF error/warning for {pdf_path}: {stderr_output.strip()}")
 
         if text == "":
             logger.warning(f"No text extracted for {pdf_path}")
+        
                 
-
         with open(output_txt_path, "w", encoding='utf-8') as txt_file:
             txt_file.write(text)
         
-        logger.info(f"Converted {pdf_path} into {output_txt_path}")
+        logger.info(f"Converted {pdf_path} into {output_txt_path} with length of text: {len(text)}")
         doc.close()
         return True, pdf_path
     
     except Exception as e:
         logger.error(f"PyMuPDF failed for converting {pdf_path}: {e}")
         return False, pdf_path
-    
+
+    finally:
+        fitz.TOOLS.mupdf_display_errors(True)
+        fitz.TOOLS.mupdf_display_warnings(True)
+        fitz.TOOLS.reset_mupdf_warnings()
+  
 def _prepare_task(filename, dirpath, input_root_dir, output_root_dir):
     """
         Helper function
@@ -95,7 +95,6 @@ def process_all_pdfs(input_root_dir=PROJECT_DATA_ROOT, output_root_dir=OUTPUT_TX
             for pdf_path, txt_path in tasks
         }
 
-        # Collect results (and log errors if needed)
         for future in as_completed(future_to_task):
             success, pdf_path = future.result()
             if not success:

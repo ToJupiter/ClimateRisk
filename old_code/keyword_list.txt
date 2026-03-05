@@ -1,0 +1,579 @@
+<|ref|>text<|/ref|><|det|>[[11, 0, 160, 50]]<|/det|>
+Transition risks  
+
+<|ref|>text<|/ref|><|det|>[[9, 60, 160, 120]]<|/det|>
+Carbon Dioxide  
+
+<|ref|>text<|/ref|><|det|>[[9, 130, 125, 185]]<|/det|>
+Dual Carbon  
+
+<|ref|>text<|/ref|><|det|>[[9, 199, 125, 255]]<|/det|>
+Low Carbon  
+
+<|ref|>text<|/ref|><|det|>[[9, 265, 125, 320]]<|/det|>
+Natural Gas  
+
+<|ref|>text<|/ref|><|det|>[[9, 330, 130, 386]]<|/det|>
+Solar Energy  
+
+<|ref|>text<|/ref|><|det|>[[9, 396, 130, 452]]<|/det|>
+Hydropower  
+
+<|ref|>text<|/ref|><|det|>[[9, 462, 130, 518]]<|/det|>
+Fossil Fuels  
+
+<|ref|>text<|/ref|><|det|>[[9, 528, 130, 584]]<|/det|>
+Wind Power  
+
+<|ref|>text<|/ref|><|det|>[[9, 594, 130, 650]]<|/det|>
+Wind Energy  
+
+<|ref|>text<|/ref|><|det|>[[9, 660, 130, 715]]<|/det|>
+Physical risks  
+
+<|ref|>text<|/ref|><|det|>[[9, 725, 150, 781]]<|/det|>
+Climate  
+
+<|ref|>text<|/ref|><|det|>[[9, 791, 150, 847]]<|/det|>
+Rain and Snow  
+
+<|ref|>text<|/ref|><|det|>[[9, 857, 130, 913]]<|/det|>
+Freezing  
+
+<|ref|>text<|/ref|><|det|>[[9, 923, 150, 978]]<|/det|>
+Heavy Rainfall  
+
+<|ref|>text<|/ref|><|det|>[[241, 60, 412, 120]]<|/det|>
+Carbon Emissions  
+
+<|ref|>text<|/ref|><|det|>[[241, 130, 412, 185]]<|/det|>
+Carbon Reduction  
+
+<|ref|>text<|/ref|><|det|>[[241, 195, 412, 250]]<|/det|>
+Decarbonization  
+
+<|ref|>text<|/ref|><|det|>[[241, 260, 412, 315]]<|/det|>
+Energy Efficiency  
+
+<|ref|>text<|/ref|><|det|>[[241, 325, 415, 380]]<|/det|>
+Renewable Energy  
+
+<|ref|>text<|/ref|><|det|>[[241, 390, 343, 444]]<|/det|>
+Petroleum  
+
+<|ref|>text<|/ref|><|det|>[[241, 454, 415, 510]]<|/det|>
+Biomass Energy  
+
+<|ref|>text<|/ref|><|det|>[[241, 520, 425, 576]]<|/det|>
+Geothermal Energy  
+
+<|ref|>text<|/ref|><|det|>[[241, 586, 365, 640]]<|/det|>
+Photovoltaic  
+
+<|ref|>text<|/ref|><|det|>[[241, 750, 365, 805]]<|/det|>
+Precipitation  
+
+<|ref|>text<|/ref|><|det|>[[241, 815, 425, 870]]<|/det|>
+Drought Disasters  
+
+<|ref|>text<|/ref|><|det|>[[241, 880, 425, 936]]<|/det|>
+High Temperatures  
+
+<|ref|>text<|/ref|><|det|>[[511, 60, 633, 115]]<|/det|>
+Carbon Peak  
+
+<|ref|>text<|/ref|><|det|>[[511, 125, 666, 180]]<|/det|>
+Carbon Trading  
+
+<|ref|>text<|/ref|><|det|>[[511, 190, 682, 245]]<|/det|>
+Carbon Reduction  
+
+<|ref|>text<|/ref|><|det|>[[511, 255, 682, 310]]<|/det|>
+Coal-fired Power  
+
+<|ref|>text<|/ref|><|det|>[[511, 320, 560, 374]]<|/det|>
+Coal  
+
+<|ref|>text<|/ref|><|det|>[[511, 384, 682, 440]]<|/det|>
+Energy Reduction  
+
+<|ref|>text<|/ref|><|det|>[[511, 450, 707, 504]]<|/det|>
+Energy Consumption  
+
+<|ref|>text<|/ref|><|det|>[[511, 514, 652, 570]]<|/det|>
+Nuclear Power  
+
+<|ref|>text<|/ref|><|det|>[[511, 750, 592, 805]]<|/det|>
+Drought  
+
+<|ref|>text<|/ref|><|det|>[[511, 815, 592, 870]]<|/det|>
+Floods  
+
+<|ref|>text<|/ref|><|det|>[[511, 880, 699, 936]]<|/det|>
+Drought Conditions  
+
+<|ref|>text<|/ref|><|det|>[[794, 60, 965, 115]]<|/det|>
+Carbon Neutrality  
+
+<|ref|>text<|/ref|><|det|>[[794, 125, 910, 180]]<|/det|>
+Carbon Sink  
+
+<|ref|>text<|/ref|><|det|>[[794, 190, 910, 245]]<|/det|>
+Zero Carbon  
+
+<|ref|>text<|/ref|><|det|>[[794, 255, 915, 310]]<|/det|>
+Green Energy  
+
+<|ref|>text<|/ref|><|det|>[[794, 320, 965, 375]]<|/det|>
+Energy Storage  
+
+<|ref|>text<|/ref|><|det|>[[794, 385, 988, 440]]<|/det|>
+Energy Consumption  
+
+<|ref|>text<|/ref|><|det|>[[794, 450, 950, 504]]<|/det|>
+Paris Agreement  
+
+<|ref|>text<|/ref|><|det|>[[794, 514, 915, 570]]<|/det|>
+Clean Energy  
+
+<|ref|>text<|/ref|><|det|>[[794, 750, 915, 805]]<|/det|>
+Temperature  
+
+<|ref|>text<|/ref|><|det|>[[794, 815, 915, 870]]<|/det|>
+Flooding  
+
+<|ref|>text<|/ref|><|det|>[[794, 880, 970, 936]]<|/det|>
+Low Temperatures
+
+<|ref|>table<|/ref|><|det|>[[0, 0, 998, 999]]<|/det|>
+<table><tr><td>CCRE</td><td>Ice and Snow, Wave Energy, Ozone Layer, Atmospheric Temperature, Air Pollution, Low Carbon, Electric Vehicle (EV), Carbon Dioxide (CO2), Waste Gas, Wastewater, Wind Power Generation, Wind Resources, Wind Energy, Photovoltaics (PV), Sea Level, Nuclear Energy, Flooding and Waterlogging, Environmental Protection, Environmental Sustainability, Dust, Extreme Weather, Emission Reduction, Kyoto Protocol, Sustainable Energy, Renewable Energy, Air Quality, Woodland, Green Credit, Energy Reserves, Energy and Environment, Energy Saving, Energy and Climate, Energy Efficiency, Energy Transition, Climate Change, Climate System, Gas Emissions, Clean Atmosphere, Clean Energy, Clean Water, Global Warming, Global Decarbonization, Thermal Energy, Ecosystem, Biomass Energy, Water Resources, Solar Energy, Solar Thermal Energy, Carbon Peak, Carbon Sink, Carbon Price, Carbon Energy, Carbon Emissions, Carbon Market, Carbon Tax, Carbon Neutrality, Weather and Climate, Greenhouse Gases (GHGs), Greenhouse Gas Emissions, Pollution Prevention, New Energy, Flue Gas, Coastal Areas, Natural Disaster, Hailstorm</td></tr><tr><td>CPRE</td><td>Hailstorm, Ice and Snow, Heavy Snowfall, Storm, Storm Damage, Drought, Sea Level Rise, Sea Water Rise, Tsunami, Severe Winter, Flood, Environmental Destruction, Extreme Heat, Extreme Weather, Extreme Cold, Precipitation, Snowfall, Rainfall, Hurricane, Intense Heat, Woodland, Tornado, Drainage, Climate Emergency, Climate Disaster, Global Warming, Heat Wave, Flooding, Weather Event, Temperature Rise, Warm Climate, Cyclone, Severe Winter, Coastal Areas, Wildfire, Rainwater, Early Winter, Natural Disaster, Coldest, Warmest</td></tr><tr><td>CTRE</td><td>Paris Agreement, Wave Power Generation, Plug-in Hybrid Electric Vehicle (PHEV), Air Pollution, Geothermal Energy, Low Carbon, Electric Vehicle (EV), Carbon Dioxide (CO2), Wind Power Generation, Wind Energy, High Energy Consumption, Mercury Emissions, Environmental Protection, Environmental Standards, Environmental Policy, Hybrid Electric Vehicle (HEV), Emission Reduction, Greenhouse Gas Reduction, Energy Consumption Reduction, Kyoto Protocol, Sustainability, Sustainable Energy, Renewable, Renewable Electricity, Renewable Energy, Green Energy, Energy Cost, Energy Independence, Energy Bill, Energy Management, Energy Technology, Energy Regulation, Energy Efficiency, Energy Policy, Emissions Trading Scheme (ETS), Climate Discourse, Climate Action, Climate Policy, Gas Emissions, Clean Atmosphere, Clean Energy, Clean Water, Fuel Cost, Gas Cost, Fuel Efficiency, Thermal Energy, Ecosystem, Solar Energy, Carbon Capture, Carbon Price, Carbon Emission Reduction, Carbon Emissions, Carbon Market, Carbon Tax, Alternative Energy, Greenhouse Gases (GHGs), New Energy, Climate Response</td></tr></table>
+
+CRTs | Example of Keywords
+Transition risks | Gas regulation, environmental awareness, energy transition, low-carbon economy, green preference, sustainable choice
+Physical risks | Climate catastrophe, floods, glacier melt, climate disruptions
+Emission Pollution | Emission rate, nitrogen oxide, greenhouse gas, CO2 emissions Chemical waste, industrial waste, toxic waste, air contamination, contaminated soil
+Climate attention | Climate change, sustainability, climate impact, carbon footprint
+
+<|ref|>table<|/ref|><|det|>[[0, 0, 997, 997]]<|/det|>
+
+<table><tr><td>Category</td><td>Definition / Reference</td><td>Representative Keywords</td></tr><tr><td>(1) Physical Risk - Acute</td><td>Short-term, event-driven risks caused by extreme weather events<br>such as floods, storms, and heatwaves.</td><td>flood, storm, heatwave, wildfire, hurricane, typhoon, extreme rainfall, disaster loss,<br>property damage, business interruption<br>(continued on next page)</td></tr><tr><td></td><td></td><td></td></tr><tr><td>L. Li et al.</td><td></td><td>International Review of Financial Analysis 108 (2025) 104708</td></tr><tr><td>(continued)</td><td></td><td></td></tr><tr><td>Category</td><td>Definition / Reference</td><td>Representative Keywords</td></tr><tr><td>(2) Physical Risk - Chronic</td><td>Long-term shifts in climate patterns leading to gradual changes<br>such as sea-level rise, temperature increase, and drought.</td><td>temperature rise, sea level, drought, desertification, soil erosion, water scarcity,<br>ecosystem stress, climate trend, biodiversity loss</td></tr><tr><td>(3) Transition Risk - Policy & Regulation</td><td>Risks from policy, regulatory, or legal changes toward a low-carbon economy.</td><td>carbon tax, emission trading, ETS, environmental regulation, carbon neutrality, low-carbon policy, compliance cost, carbon cap, energy regulation</td></tr><tr><td>(4) Transition Risk - Technology</td><td>Risks from technological substitution or obsolescence during energy transition.</td><td>green technology, renewable energy, clean tech, energy efficiency, low-carbon innovation, technological transformation, equipment upgrade, digital transition</td></tr><tr><td>(5) Transition Risk - Market</td><td>Risks arising from shifts in supply-demand balance, pricing, and consumer preferences.</td><td>carbon price volatility, energy cost, green demand, consumer shift, market transition, fossil fuel decline, industry restructuring, asset stranding</td></tr><tr><td>(6) Transition Risk - Reputation</td><td>Risks due to stakeholder or public perception of a firm's environmental responsibility.</td><td>greenwashing, ESG rating, corporate image, stakeholder pressure, sustainability reputation, social responsibility, investor trust, media exposure</td></tr><tr><td>(7) Opportunity (Adaptation & Mitigation)</td><td>Positive opportunities from climate adaptation, mitigation, and green innovation.</td><td>carbon capture, green investment, sustainability strategy, resilience building, climate adaptation, renewable project, eco-innovation, green financing</td></tr></table>
+
+Panel A Keywords Associated with Physical Climate Risk
+
+Acid fog
+Atmosphere
+Climate
+Debris flow
+Disaster relief
+Sand dust
+Ecosystem
+Exhaust gas
+Flood disaster
+Fog prevention
+Frost
+Harmful organisms
+Heavy rain
+Landslide
+Natural disaster
+Ocean acidification
+Precipitation
+Rainy day
+Severe winter
+Snow disaster
+Storm surge
+Temperature rise
+Typhoon
+Water crisis
+Waterlogging prevention
+
+Acid rain
+Atmospheric effect
+Cold
+Desert
+Drought
+Suspended dust
+El Niño
+Extreme cold
+Water disaster
+Forest land
+Gale
+Harsh winter
+High temperature
+Lightning
+Natural environment
+Ozone layer
+Rainfall
+Rainy season
+Smog
+Snowfall
+Sulfur oxides
+Thunderstorm
+Urban waterlogging
+Water management
+Weather
+
+Air purification
+Atmospheric environment
+Cold current
+Sanding
+Drought and flood
+Particulate matter
+Environmental destruction
+Extreme temperatures
+Flood prevention
+Forest resources
+Greenhouse effect
+Hazardous substances
+Hurricane
+Lightning protection
+Natural resources
+Particulate matter
+Raining
+Scorching heat
+Smog prevention
+Snowing
+Air temperature
+Tornado
+Vegetation
+Water scarcity
+Fire disaster
+
+Atmospheric quality
+Biodiversity
+Cold protection
+Desertification
+Drought condition
+Earthquake
+Environmental issues
+Fire prevention
+Flood season
+Foul odor
+Hail
+Heat damage
+Hydrogen sulfide
+Meteorology
+Nitrogen compounds
+Permafrost
+Amount of rainfall
+Sea level rise
+Smoke
+Snowstorm
+Temperature
+Toxic substances
+Volatile organic compounds (VOCs)
+Water shortage
+Mountain wildfire
+
+Air quality
+Black smoke
+Blizzard
+Cold wave
+Cold winter
+Disaster
+Drought disaster
+Earthquake resistance
+Environmental pressure
+Flood
+Flood situation
+Freeze
+Hail prevention
+Heat wave
+Ice formation
+Methane
+Nitric oxide
+Plant disease
+Rainstorm
+Severe cold
+Snow accumulation
+Soil erosion
+Temperature difference
+Tropical storm
+Volcano
+Waterlogging
+Wildfire
+
+Ambient air
+Disaster prevention
+Drought resistance
+Ecological environment
+Environmental quality
+Flood control
+Flue gas
+Freezing rain
+Harmful gases
+Heavy fog
+Insect pest
+Mountain torrents
+Nitrogen oxides
+PM2.5
+Rainwater
+Severe drought
+Snow and ice
+Storm
+Temperature drop
+Tsunami
+Warming
+Water accumulation
+Wind and hail
+
+Table A1. Climate change risk—related keywords.
+
+空气污染 air pollution
+空气质量 air quality
+空气温度 air temperature
+清洁空气 clean air
+清洁能源 clean energy
+二氧化碳 carbon dioxide
+可再生能源 renewable energy source
+能量转换 energy conversion
+能源环境 energy environment
+水能 hydro energy
+风能 wind energy
+热能 thermal energy
+太阳能 solar energy
+生物能 bioenergy
+林地能源 forest land energy
+森林资源 forest resources
+可持续能源 sustainable energy
+海平面 sea level
+涨潮 flood tide
+暴雪 snowstorm
+台风 typhoon
+雾霾 haze
+水灾 flood
+海啸 tsunami
+干旱 drought
+
+盐碱化 salinization
+极端天气 extreme weather event
+自然灾害 natural disaster
+臭氧 ozone
+碳税 carbon tax
+碳价格 carbon price
+碳交易 carbon trading
+碳排放 carbon emission
+碳中和 carbon neutrality
+碳达峰 carbon peak
+气体排放 gaseous emission
+温室效应 greenhouse effect
+全球脱碳 Global decarbonization
+天气气候 weather and climate
+全球变暖 global warming
+气候变暖 climatic warming
+气候变化 climate change
+气候风险 climate risk
+京都议定书 kyoto protocol on climate change
+巴黎协定 paris agreement
+环境可持续性 environmental sustainability
+新能源 new energy
+电动汽车 electric automobile
+节能 energy conservation
+环保 environmental protection
+
+Afforestation | Alternative Energy | Alternative Fuel | Battery Electric | Bioenergy | Biomass Energy
+Carbon Allowance | Carbon Asset | Carbon Border Tax | Carbon Capture | Carbon Dioxide | Carbon Emissions
+Carbon Finance | Carbon Footprint | Carbon Inclusive | Carbon Intensity | Carbon Label | Carbon Monoxide
+Carbon Neutrality | Carbon Peak | Carbon Pricing | Carbon Sink | Carbon Tax | Carbon Trading
+Carbonization | Circular Economy | Circulating Water | Clean Development | Clean Energy | Clean Fuel
+Clean Production | Coal Saving | Coal-fired Power | Copenhagen Accord | Decarbonization | Desertification Control
+Dual Carbon | Eco-friendly | Ecological Conservation | Ecologicalization | Electric Vehicle | Electricity Saving
+Emission Reduction | Energy Saving | Energy Conservation | Energy Consumption behavior | Energy Consumption | Energy Consumption Reduction
+Energy Conversion | Energy Crisis | Energy Performance | Energy Efficiency | Energy Management | Energy Resources
+Energy Reduction | Energy Security | Energy Storage | Energy Structure | Energy Technology | Energy Transition
+Energy Utilization | Environmental Awareness | Environmental Exchange | Environmental Governance | Environmental Law | Environmental Monitoring
+Environmental Conservation | Eco-friendly practices | Environmental Protection | Environmental Standard | Forest Rights | Fossil Energy
+Fossil Fuel | Fuel Saving | Geothermal Energy | Green Bond | Green Consumption | Green Credit
+Green Development | Green Electricity | Green Energy | Green Finance | Green Office | Green Premium
+Green Transition | Greenhouse Gas | Hazardous Solid Waste | Hazardous Waste | High-efficiency Fuel | Hydro Project
+Hydroelectric Power | Hydrogen | Hydrogen Energy | Hydropower | Hydropower Resources | Liquid Fuel
+Low-Carbon | Luminous Efficacy | Ministry of Ecology and Environment | Mineral fuels | Natural Gas | Net-zero Emissions
+New Energy | New Materials | Nuclear Energy | Nuclear Power | Ocean Energy | Offshore Power
+Paris Agreement | Photoelectricity | Photovoltaic | Pollution | Pollution Discharge | Pollution Prevention
+Pollution Reduction | Premium Energy | Renewable | Resource Conservation | Resource Tax | Resource Utilization Level
+Smart Grid | Light energy | Solar Energy | Solar Thermal | Solid Waste | Solid refuse
+Sulfur Dioxide | Sustainable Development | Thermal Power Generation | Three Wastes | Tidal Energy | Waste
+Waste Gas | Waste Incineration | Waste-to-energy | Wastewater | Water Conservation | Hydraulic resources
+Water conservancy resources | Water Resources | Water Rights | Water Saving | Wave Energy | Wind Energy
+Wind Power | Wind Power Generation | Wind Turbine | Zero-carbon
+
+Corporate climate risk disclosure keyword set.
+
+Thesaurus type | Specific content
+---|---
+Direct Risks | Climate risk, Greenhouse gases, Global warming, Climate warming, Extreme weather, Atmospheric pollution, Earthquake, Typhoon, Hurricane, Tornado, Storm, Storm Surge, Tsunami, Snow, Hail, Snow, Ice, Freeze, Frost, Freezing Rain, Flood, Flooding, Waterlogging, Drought, Catastrophe insurance
+Transformation risk | New development concept, Sustainable development, Ecology, Green water and green mountains, Green environmental protection, Environmentally friendly, Environmental standards, Green economy, Circular economy, Green transformation, Climate improvement, Low carbon cities, Sponge cities, Pollution control, Clean air, Environmental disclosure, Low carbon transformation, Low carbon, Peak carbon emissions, Net-zero emissions, Energy conservation Emission cut, Carbon emission reduction, Reduce emissions, Carbon dioxide, Green finance, Carbon market, Carbon trading, Carbon financing, Carbon tariff, Carbon tax, Low carbon technology, Carbon footprint, Carbon capture, Carbon sequestration, Carbon sink, Energy regulation, Renewable energy, Renewable, New energy, Clean energy, Clean power, Secondary energy, Solar energy, Scale solar energy, Wind power, Wind resources, Wind farms, Geothermal energy, Tidal energy, Transmission network, Energy retrofit, Energy investment, Clean fuels, Renewable resources, Cleaner production, Energy consumption, Resource conservation, Consumption reduction, Recycling, Recovery, Clean industry, Degradation, Electricity, Battery, Battery power, New energy Vehicle, Electric vehicle, Charging pile, Plug-in hybrid, Coastal areas, Woodland, Forest conservation, Green building
+
+renewable energy, onshore wind, carbon intensity, electric vehicle, electric motor, energy application, clean energy, provide energy, produce electricity, new energy, efficient solution, help state, climate change, global warm, environmental standard, wind power, power generator, power agreement, wind energy, solar pv, supply energy, energy efficient, scale solar, electric hybrid, greenhouse gas, need clean, source power, solar energy, coastal area, sustainability goal, air quality, energy star, energy reform, clean air, environmental footprint, plant power, carbon emission, design use, compare conventional, gas emission, area energy, gas vehicle, extreme weather, charge station, effort energy, carbon dioxide, clean water, pass house, water resource, central design, carbon free, autonomous vehicle, vehicle manufacturer, driver assistance, energy environment, future energy, electrical energy, wind resource, motor control, solar installation, government india, combine heat, now ice, battery power, electric bus, renewable natural, motor pollution, distribute power, promote use, battery electric, environmental benefit, farm project, integrate resource, eco friendly, laser diode, clean power, electrical vehicle, deliver energy, carbon price, carbon neutral, protect environment, world population, fast charge, sustainable energy, solar farm, cell power, manage energy, energy regulatory, energy team, invest energy, obama administration, cycle gas, electric energy, heat power, coal gasification, forest land, carbon tax, environmental concern, capacity energy, unite nation.
+
+Vocabulary | Count | Vocabulary | Count | Vocabulary | Count
+co emiss | 90 | scop | 22 | group chief | 11
+climat chang | 67 | product servic | 21 | includ climat | 11
+execut committe | 50 | science base | 21 | local base | 11
+scenario analysi | 49 | transit low | 21 | member execut committe | 11
+low carbon | 47 | weather event | 21 | reduc carbon | 11
+scope emiss | 47 | global warm | 20 | reduct target | 11
+ghg emiss | 46 | reduc emiss | 20 | relat issu | 11
+greenhous ga | 39 | base emiss | 19 | renew power | 11
+relat risk | 39 | environ social | 19 | work group | 11
+board director | 38 | climat risk | 17 | base target | 10
+climat relat | 36 | relat risk opportun | 17 | chief execut | 10
+natur ga | 36 | energi use | 16 | co emiss reduct | 10
+ga emiss | 35 | indirect emiss | 16 | committe board | 10
+carbon intens | 34 | renew energi | 16 | emiss factor | 10
+impact climat | 34 | chang risk | 15 | emiss report | 10
+greenhous ga emiss | 33 | corpor govern | 15 | ghg emiss scop | 10
+carbon neutral | 32 | emiss intens | 15 | reduc carbon intens | 10
+climat relat risk | 32 | energi consumpt | 15 | relat risk opportun | 10
+impact climat chang | 29 | carbon price | 14 | risk committe | 10
+methan emiss | 29 | climat chang risk | 14 | vice presid | 10
+emiss reduct | 28 | manag risk | 14 | achiev carbon neutral | 9
+risk manag | 28 | net emiss | 14 | climat relat issu | 9
+tom co | 27 | financi risk | 13 | direct emiss | 9
+transit low carbon | 26 | sustain committe | 13 | environment risk | 9
+emiss scope | 25 | carbon economi | 12 | group climat | 9
+energi effici | 25 | enterpris risk | 12 | manag climat | 9
+risk opportun | 25 | environment impact | 12 | million tonne | 9
+extrem weather | 24 | manag process | 12 | reduc ghg | 9
+oll sand | 24 | physic risk | 12 | reduc ghg emiss | 9
+total scope | 24 | scop ghg | 12 | residu emiss | 9
+busi travel | 22 | climat issu | 11 | group emiss | 8
+long term | 22 | committe group | 11 | indirect co emiss | 8
+renew electr | 22 | environment footprint | 11 | scop ghg emiss | 8
+
+Risk types | Filtered words
+---|---
+Transitional climate risk | carbon dioxide, carbon emission, carbon peak, carbon neutral, dual carbon, carbon emission reduction, carbon trading, carbon sink, Low-carbon, carbon reduction carbon, calcium carbon, zero carbon, natural gas, energy saving, coal electric, green, solar renewable, renewable energy, coal, stored energy, hydro, oil, consumption reduction, energy consumption, fossil energy, biomass, energy consumption, Paris Agreement, wind, geothermal, nuclear, clean energy, wind energy, Optoelectronics.
+Physical climate risk | climate, weather, dry, temperature, rain, snow, rain, deluge, flood, freezing, drought, drought, low temperature, heavy rain, high temperature.
+
+adaptive capacity
+air burst
+airburst
+airbursts
+apocalypse
+apocalypses
+ash fall
+ashfall
+avalanche
+avalanches
+blizzard
+blizzards
+calamity
+cataclysm
+cataclysms
+climate change
+climate wars
+coastal erosion
+cold wave
+coping capacity
+cyclone
+debacle
+debacles
+derecho
+derechos
+disaster
+disaster risk
+disaster risk management
+disaster risks
+disasters
+drought
+
+droughts
+earthquake
+earthquakes
+El Nino
+extreme heat
+extreme rain
+extreme rainfall
+extreme rains
+extreme temperature
+extreme temperatures
+extreme weather
+firestorm
+firestorms
+flood
+flooded
+flooding
+floodings
+floods
+fog
+fogs
+forest fire
+forest fires
+freeze
+freezes
+freezing
+gale
+gales
+geophysical hazard
+geophysical hazards
+global warming
+hail
+hailstorm
+hailstorms
+
+heat wave
+heat waves
+heavy rainfall
+heavy snow
+high wind
+high winds
+hurricane
+hurricanes
+hydrological hazard
+hydrological hazards
+La Nina
+landfall
+landfalls
+landslide
+landslides
+lava flow
+lava flows
+microburst
+microbursts
+mudslide
+mudslides
+natural hazard
+natural hazards
+rainfall
+rainfalls
+rainstorm
+rainstorms
+rock fall
+rock-fall
+rogue wave
+rogue waves
+seiche
+
+seiches
+severe winter condition
+severe winter conditions
+snow
+snowstorm
+snowstorms
+storm
+storms
+thunderstorm
+thunderstorms
+tornado
+tornadoes
+tremor
+tsunami
+tsunamis
+twister
+typhoon
+typhoons
+volcanic
+volcano
+volcanos
+whirlpool
+whirlpools
+wildfire
+wildfires
+wind
+winds
+windstorm
+windstorms
+winterstorm
+winterstorms
+
+Table 3. The natural hazard dictionary
